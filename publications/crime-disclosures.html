@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security: same rule as the homepage. Only files from this site may load. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ===== SEO for this project ===== -->
+  <title>AI and Crime Disclosures | CogStandards</title>
+  <meta name="description" content="A CogStandards project measuring how AI models respond when adults and children disclose witnessing or experiencing crime, and building standards for what frontier labs should expect of their systems.">
+  <link rel="canonical" href="https://aihumancognition.org/publications/crime-disclosures.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CogStandards">
+  <meta property="og:title" content="AI and Crime Disclosures">
+  <meta property="og:description" content="Standards for how AI should respond when adults and children disclose crime, led by Julia Shaw and Andrew Strait.">
+  <meta property="og:url" content="https://aihumancognition.org/publications/crime-disclosures.html">
+  <meta property="og:image" content="https://aihumancognition.org/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ===== HEADER / NAVIGATION (same as the homepage) ===== -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="logo" href="../index.html" aria-label="CogStandards home">
+      <img class="logo-mark" src="../logo.png" alt="CogStandards: The Centre for Standards in AI and Human Cognition">
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#areas">Areas of work</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#people">People</a></li>
+        <li><a class="btn" href="../index.html#participate">Participate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="hero paper-hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="crumb"><a href="../index.html#projects">← Projects</a></p>
+      <h1>AI and Crime Disclosures</h1>
+    </div>
+    <div class="hero-text">
+      <p class="paper-kind"><span class="label">Project</span><time datetime="2026">2026, in progress</time></p>
+      <p class="lede">Standards for how AI should respond when adults and children disclose witnessing or experiencing crime.</p>
+      <p class="hero-links"><span class="label">Sections:</span>
+        <a href="#problem">The problem</a>
+        <a href="#work">What the project does</a>
+        <a href="#outcome">Where it leads</a>
+        <a href="#team">Team</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE PROBLEM ===== -->
+<section class="section" id="problem">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>The problem</h2>
+    </div>
+    <div class="prose">
+      <p class="abstract-text">People tell AI systems things they have told no one else. Some of those things are disclosures of crime: an adult describing an assault, a child describing abuse, a witness describing what they saw.</p>
+      <p>When a person discloses a crime to a police officer, a social worker or a clinician, decades of research shape what happens next. The questions asked in the first conversation can strengthen a memory or contaminate it. Leading questions, repeated questions and suggested details can change what a witness later reports, and a contaminated account can fail in court. Interviewing protocols for vulnerable witnesses exist because of this evidence.</p>
+      <p>AI models have no such protocol. They respond to disclosures in whatever way their training happened to produce, and nobody has measured what that looks like.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT THE PROJECT DOES ===== -->
+<section class="section" id="work">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>What the project does</h2>
+    </div>
+    <div class="prose">
+      <p>Julia Shaw and Andrew Strait are measuring how current AI models handle disclosures of crime from adults and from children.</p>
+      <ol class="cards step-cards">
+        <li class="card">
+          <span class="card-num">01</span>
+          <h4>How models ask questions</h4>
+          <p>Recording what different models say when a person discloses a crime, and what they ask next.</p>
+        </li>
+        <li class="card">
+          <span class="card-num">02</span>
+          <h4>Evidence-based or misleading</h4>
+          <p>Comparing those responses with what interviewing research says protects a witness's account, and identifying where models lead, suggest or press.</p>
+        </li>
+        <li class="card">
+          <span class="card-num">03</span>
+          <h4>Specific risks</h4>
+          <p>Naming the concrete harms these responses could cause, from contaminated memories to accounts that cannot be used as evidence.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHERE IT LEADS ===== -->
+<section class="section" id="outcome">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>Where it leads</h2>
+    </div>
+    <div class="prose">
+      <p>The findings will feed a set of standards that frontier labs can use to guide what should be expected of a system when a vulnerable person discloses a crime: what a model should ask, what it should avoid, and when it should hand the person to a human.</p>
+      <p>This project sits within the CogStandards area of work on <a href="../index.html#abuse">AI and abuse disclosures</a>.</p>
+      <p class="note">Findings will be published here as the work completes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="section" id="team">
+  <div class="container">
+    <h2>Team</h2>
+    <ul class="people">
+      <li class="person">
+        <h3>Julia Shaw</h3>
+        <p class="role">CogStandards</p>
+        <p>Criminal psychologist and memory scientist whose research on false memories and witness interviewing has been used in criminal courts. Visiting Researcher at the King's Institute for Artificial Intelligence and a visitor at the Centre for the Governance of AI.</p>
+      </li>
+      <li class="person">
+        <h3>Andrew Strait</h3>
+        <p class="role">Advisor, CogStandards</p>
+        <p>Former head of societal resilience at the UK AI Security Institute (AISI). He has moved into AI safety grant making.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== GET INVOLVED ===== -->
+<section class="section participate">
+  <div class="container two-col">
+    <h2>Get involved</h2>
+    <div>
+      <p>The team welcomes researchers, practitioners who work with victims and witnesses, and AI developers who want to collaborate or review draft standards.</p>
+      <a class="btn btn-large" href="https://www.linkedin.com/in/drjuliashaw/">Get in touch on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>&copy; <span id="year">2026</span> The Centre for Standards in AI and Human Cognition (CogStandards)</p>
+    <p><a href="https://www.linkedin.com/in/drjuliashaw/">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
