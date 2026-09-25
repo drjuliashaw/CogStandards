@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security: same rule as the homepage. Only files from this site may load. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ===== SEO for this paper ===== -->
+  <title>Epistemic Risk from False Memory Implantation by Use of Conversational AI | CogStandards</title>
+  <meta name="description" content="Conversational AI could implant false memories in its users, at scale and by default, and through weaponization by bad actors. Julia Shaw and Carla Zoe Cremer, August 2026.">
+  <link rel="canonical" href="https://aihumancognition.org/publications/epistemic-risk-false-memory-implantation.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Google Scholar reads these tags to index the paper -->
+  <meta name="citation_title" content="Epistemic Risk from False Memory Implantation by Use of Conversational AI">
+  <meta name="citation_author" content="Shaw, Julia">
+  <meta name="citation_author" content="Cremer, Carla Zoe">
+  <meta name="citation_publication_date" content="2026/08">
+  <meta name="citation_pdf_url" content="https://aihumancognition.org/publications/epistemic-risk-false-memory-implantation.pdf">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CogStandards">
+  <meta property="og:title" content="Epistemic Risk from False Memory Implantation by Use of Conversational AI">
+  <meta property="og:description" content="Human memory is part of the AI attack surface. Julia Shaw and Carla Zoe Cremer on AI-induced false memories and “false memory attacks”.">
+  <meta property="og:url" content="https://aihumancognition.org/publications/epistemic-risk-false-memory-implantation.html">
+  <meta property="og:image" content="https://aihumancognition.org/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ===== HEADER / NAVIGATION (same as the homepage) ===== -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="logo" href="../index.html" aria-label="CogStandards home">
+      <img class="logo-mark" src="../logo.png" alt="CogStandards: The Centre for Standards in AI and Human Cognition">
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#areas">Areas of work</a></li>
+        <li><a href="../index.html#publications">Publications</a></li>
+        <li><a href="../index.html#people">People</a></li>
+        <li><a class="btn" href="../index.html#participate">Participate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== HERO: title, authors, PDF ===== -->
+<section class="hero paper-hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="crumb"><a href="../index.html#publications">← Publications</a></p>
+      <h1>Epistemic Risk from False Memory Implantation by Use of Conversational AI</h1>
+    </div>
+    <div class="hero-text">
+      <p class="paper-kind"><span class="label">Paper</span><time datetime="2026-08">August 2026</time></p>
+      <p class="lede">Julia Shaw and Carla Zoe Cremer</p>
+      <p class="hero-actions">
+        <a class="btn btn-large" href="epistemic-risk-false-memory-implantation.pdf">Download PDF</a>
+        <a class="btn-plain" href="#references">References</a>
+      </p>
+      <p class="hero-links"><span class="label">Sections:</span>
+        <a href="#abstract">Abstract</a>
+        <a href="#s1">Introduction</a>
+        <a href="#s2">Mechanisms of False Memory Implantation</a>
+        <a href="#s3">Memory Implantations from Conversational AI</a>
+        <a href="#s4">Potential Implications</a>
+        <a href="#s5">Conclusion</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABSTRACT ===== -->
+<section class="section" id="abstract">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>Abstract</h2>
+    </div>
+    <div class="prose">
+      <p class="abstract-text">Conversational AI could implant false memories in its users, at scale and by default, and through weaponization by bad actors. Psychology research shows false memories of events can be implanted using known techniques: personal information, guided imagination, praise, and repetition. Conversational AI can facilitate each one. Memory and personalization features hold more autobiographical detail than any human experimenter ever had, sycophantic models praise recall, and context compression overwrites the verbatim record that could expose a distortion. Memory poisoning attacks could exploit the same mechanisms deliberately. Once implanted, false memories are typically self-concealing, and they can irreparably change who people think they are and how they remember collective, societally important events. We argue that human memory is part of the AI attack surface, that AI-induced false memories need imminent empirical study, and that design principles need to be implemented to protect against what we term “false memory attacks”.</p>
+      <p class="tags"><span class="label">Keywords</span>
+        <span class="tag">Cognitive security</span> <span class="tag">Epistemic security</span> <span class="tag">False memory</span> <span class="tag">Memory implantation</span> <span class="tag">Conversational AI</span> <span class="tag">Large language models</span> <span class="tag">Human-AI interaction</span> <span class="tag">Memory poisoning</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 1 INTRODUCTION ===== -->
+<section class="section" id="s1">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">01</span>
+      <h2>Introduction</h2>
+    </div>
+    <div class="prose">
+<p>The field of epistemic security is concerned with risks to individual and collective sense-making and focused on threats to the ability to represent and reason about the world accurately <span class="cite">[<a href="#ref-51">51</a>, <a href="#ref-58">58</a>]</span>. False memories, which are memories of things that didn’t actually happen, increase epistemic risk.</p>
+<p>It has been suggested that developments in artificial intelligence (AI) too are likely to increase epistemic risk <span class="cite">[<a href="#ref-58">58</a>]</span>, yet evidence and measurement of systemic shifts in sense-making is sparse. It can also be politically controversial, because there is a reluctance to assign anyone to be the arbiter of truth - to decide whether a change in public opinion represents a problematic decline in factual accuracy, or a mere shift in preference.</p>
+<p>Some AI epistemic security risk phenomena are, however, uncontroversially undesirable, like the accidental, negligent, or malicious hijacking of autobiographical memory. We suggest that conversational AI could facilitate the creation of false memories in users, showcasing a mechanism of epistemic drift through the widespread use of automation tooling. AI-induced false memories are a breach in cognitive security.</p>
+<p>Previous research has provided specific evidence of false memory implantations through synthetic content and chatbot interactions <span class="cite">[<a href="#ref-12">12</a>, <a href="#ref-44">44</a>, <a href="#ref-45">45</a>]</span>. We combine these results with decades of research on false memories from psychological science to show how detrimental the consequences of false memories can be. We also illustrate that existing knowledge about implanting false memory in humans, and current understanding of large language models (LLMs), can inform expectations and projections about harms based on well-understood cognitive mechanisms.</p>
+<p>We invoke the precautionary principle and consider the mechanism by which software design choices affect epistemic risk <em>before</em> the evidence is fully established. AI-induced false memories in users may be neither reversible, detectable nor contained.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 2 MECHANISMS OF FALSE MEMORY IMPLANTATION ===== -->
+<section class="section" id="s2">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">02</span>
+      <h2>Mechanisms of False Memory Implantation</h2>
+    </div>
+    <div class="prose">
+<h3><span class="sub-num">2.1</span>What is a false memory?</h3>
+<p>A false memory is a memory of something that didn’t happen, which the person recalling it believes to be true <span class="cite">[<a href="#ref-52">52</a>]</span>. A false memory is not an attempt to lie. There is considerable study of semantic false memories (misremembering facts), including of misremembering words presented in lists <span class="cite">[<a href="#ref-20">20</a>]</span>, and studies which show that the prevalence of misinformation and disinformation after (and during) historically important events can result in people misremembering important facts about what really happened <span class="cite">[<a href="#ref-28">28</a>]</span>.</p>
+<p>Often, these kinds of semantic false memories can be fact-checked, because there is an independent, reliable record of the original version of the truth. Episodic false memories, which are false memories of subjective experiences and events, often do not have this luxury. For many human experiences, there is no independent record of ground truth. There is only memory. This is one reason why false memories outside the lab tend to be impossible to identify once they are implanted. This self-concealing nature is a hallmark of epistemic risks.</p>
+
+<h3><span class="sub-num">2.2</span>Episodic false memory studies</h3>
+<p>One exception, where people do have access to ground truth, is in experimental settings where false memories are intentionally implanted, and the false memory is revealed to the participant during the debriefing.</p>
+<p><strong>Partial memories.</strong> Hundreds of studies have successfully done this, including implanting partial false memories - where the event happened but the person is led to misremember critical details. For example, getting people to misremember what they saw on the scene of a car crash <span class="cite">[<a href="#ref-31">31</a>]</span>, or misremembering the face of an interrogator and critical details about a room after being in a highly stressful prisoner of war training scenario <span class="cite">[<a href="#ref-36">36</a>]</span>.</p>
+<p><strong>Complete memories.</strong> Researchers have also implanted complete false memories of entire events that never happened. For example, implanting low-stakes events of negative experiences like spilling the punch bowl at a wedding <span class="cite">[<a href="#ref-22">22</a>]</span>, positive experiences like taking a hot air balloon ride <span class="cite">[<a href="#ref-57">57</a>]</span>, or neutral experiences like loving to eat asparagus as a child (and examining subsequent consumer-related behavior) <span class="cite">[<a href="#ref-29">29</a>]</span>. High-stakes emotional events have also been implanted, including having a participant falsely remember getting injured or being the perpetrator of a crime <span class="cite">[<a href="#ref-52">52</a>]</span>.</p>
+<p><strong>Success rates.</strong> On average, about 30% of participants in studies on complete episodic false memories come to remember the specific incident the researchers tried to implant. This does not mean that those who did not develop false memories are necessarily immune to them, simply that the specific memory did not take hold in a given research setting.</p>
+<p><strong>Ease of implantation.</strong> There is disagreement between researchers about how easily false memories of complex and important emotional events can be implanted and how precisely to classify something as a false memory <span class="cite">[<a href="#ref-52">52</a>]</span>. However, when Arce et al. <span class="cite">[<a href="#ref-6">6</a>]</span> synthesized the findings of 30 experiments on the most complex episodic false memories, they found that the strength of the data “confer the implanting of false memories the status of ‘scientific fact’ or ‘scientific truth’.” and “the probability of implanting false memories was common”. It is also very likely that everyone is capable of developing episodic false memories, as even people with exceptionally good autobiographical memory have been shown to be vulnerable to creating them, including of important emotional events <span class="cite">[<a href="#ref-46">46</a>]</span>.</p>
+
+<h3><span class="sub-num">2.3</span>Implanting a false episodic memory</h3>
+<p>Complex episodic false memories are typically implanted in dyadic conversational interviews, usually including the following steps. Participants in these studies do not know that the research is on false memories, they believe they are trying to recover real lost memories. Here we use the method from Shaw and Porter <span class="cite">[<a href="#ref-53">53</a>]</span> as a template to delineate the four main steps of an episodic false memory study.</p>
+<ol class="cards step-cards">
+      <li class="card">
+        <span class="card-num">01</span>
+        <h4>Personal information seeking</h4>
+        <p>Before the implantation begins, the researchers ask potential participants for contact information for friends or family members. The participant knows that these trusted persons will be contacted. The researcher gains important details from the informants about the participant, like photos, details about their life like where they grew up, and harvests a story of at least one true event that the participant actually experienced. This information is subsequently used as a scaffold for the memory implantation to make the context plausible and the information appear trustworthy. The researchers are effectively borrowing the trust participants have for their parents, friends, or others who know them well.</p>
+      </li>
+      <li class="card">
+        <span class="card-num">02</span>
+        <h4>Imagination</h4>
+        <p>Participants are told to remember a true event in detail, then they are asked to remember the target memory the researchers want to implant. When the participant says they do not remember, a method for recovering the memory is offered and almost universally accepted by the participants. Participants are then asked to close their eyes, and imagine the situation, in a guided imagination exercise. Only the key scaffold of the target false memory is repeated, for example that they committed a crime at the age of 14, in their hometown, and their (named) friend was there. This intentionally gives a lot of creative space to the individuals themselves to come up with the specific details to make the memory plausible.</p>
+      </li>
+      <li class="card">
+        <span class="card-num">03</span>
+        <h4>Praise and social pressure</h4>
+        <p>The researcher conducting the study has a helpful persona and whenever participants mention any memory detail, offers immediate praise. Participants are told they are doing well and that it looks like the memory is coming back to them. They are also told that “most people” recover lost memories if they try hard enough, which is a subtle form of social pressure.</p>
+      </li>
+      <li class="card">
+        <span class="card-num">04</span>
+        <h4>Repetition</h4>
+        <p>Episodic false memories are typically implanted over three sessions, each one week apart. This repetition allows the memory to become more complex over time as the imagination exercises are repeated in the sessions, and participants are told to try and recover more of the memory between the sessions on their own. Both the repetition and the time delay allow for easier failures of source monitoring, which is where an individual can no longer tell where a detail came from (for example whether it came from an internal or external source, or whether it came from their imagination or memory) <span class="cite">[<a href="#ref-24">24</a>]</span>.</p>
+      </li>
+    </ol>
+<p><strong>Debriefing.</strong> After the study, participants are debriefed and told about the true nature of the study. It is explained to them how the false memory was constructed, and that they can now speak with the informants who will confirm that this memory did not come from them. The ethics and deception of such studies are sometimes questioned, but research has found that in independent follow-up studies, both participants and informants are generally very positive about their experiences and find the deceptive methods acceptable <span class="cite">[<a href="#ref-38">38</a>]</span>. While in research settings it is possible to debrief participants and (hopefully) offer enough evidence for the person to understand that the account was not true, this is often not the case in real-world settings.</p>
+<p><strong>Other vectors of implantation.</strong> Certain kinds of psychotherapy (like regression therapy) are thought to be a common source of false memories, particularly of childhood trauma <span class="cite">[<a href="#ref-54">54</a>]</span>. This is thought to partly be because a considerable number of psychotherapists endorse ideas about memory that contradict scientific evidence. An international review of studies on psychotherapists’ memory beliefs <span class="cite">[<a href="#ref-50">50</a>]</span> found that a significant number endorsed the counter-empirical ideas that the brain stores every single experience and that it is possible to have and recover complex memories from the first two years of life. Nearly half believed that repressed memories can be accurately retrieved, which is a view that has been fiercely criticized. If an individual develops a false memory during therapy unknowingly, it may continue to grow and the impacts can worsen if the false memory is not discovered or challenged. In cases where a memory is later discovered to be false by a patient themselves, the patient can suffer additional psychological harm from this realization <span class="cite">[<a href="#ref-27">27</a>]</span>.</p>
+<p>Examples from legal cases also show that once a false memory has taken hold, it can grow offshoots: other false memories that relate to the first one. One example of this is the “satanic panic” of the 1990s, during which people formed false memories of horrific impossible acts and the people around them began to believe they too had experienced them <span class="cite">[<a href="#ref-27">27</a>]</span>.</p>
+<p>Through feedback loops that perpetually reinforce the false memories, they could become increasingly complex and reality-defining, and they could conceivably grow into an entire false memory ecosystem.</p>
+
+<h3><span class="sub-num">2.4</span>Consequences of episodic false memories</h3>
+<p>Already in 1905, scientist William Stern wrote about the consequences of “memory falsification”, and that errors in memories were the norm, rather than the exception <span class="cite">[<a href="#ref-39">39</a>]</span>. Stern considered this in the context of the courtroom, where one memory is often pitted against another, with no possibility of ground truth.</p>
+<p><strong>Wrongful convictions.</strong> This can lead to catastrophic outcomes if people are wrongfully accused or convicted. For example, for cases that have been overturned by post-conviction DNA, eyewitness misidentification was a factor in more than 60% of cases investigated by The Innocence Project <span class="cite">[<a href="#ref-23">23</a>]</span>, a US-based national litigation and public policy organization. There is also documented evidence of false memories of childhood sexual abuse which have landed in court <span class="cite">[<a href="#ref-42">42</a>]</span>. Adverse consequences from these kinds of allegations can last long after an individual is legally cleared, as alleged wrongdoers may continue to be shunned from their families and communities <span class="cite">[<a href="#ref-27">27</a>]</span>.</p>
+<p><strong>Self models.</strong> Episodic false memories are not just destructive to the lives of others, they can also result in harm to the individual who has them. There have been documented cases of people experiencing psychological symptoms of post-traumatic stress disorder like flashbacks, depression, and psychosis, even though it later turned out that the events could not have happened.<sup class="fn-mark"><a href="#fn1" id="fnref1" aria-label="Footnote 1">1</a></sup> As such, false memories have the ability to change the foundation of someone’s autobiography or worldview. Ultimately people can coalesce their identity around a misperceived autobiography, which can have serious distortion effects on who someone believes themselves to be.</p>
+<p><strong>Memory contagion.</strong> False memories are also known to be contagious between people, known as co-witness memory conformity effects <span class="cite">[<a href="#ref-11">11</a>]</span>. This is effectively because individuals can become conduits for misinformation, or can convince others of their own spontaneously inaccurate versions of events. Perhaps the most striking example of this is in the context of war crimes, where entire populations are faced with the difficult challenge of having to aggregate their personal memories into a collective historical whole. Research on false memories has been directly cited in the International Criminal Court <span class="cite">[<a href="#ref-61">61</a>]</span>, and has been used to question witness statements on both sides of a conflict. How can we be sure that any one memory, never mind collective memory, is an accurate representation of what happened?</p>
+<p>If someone or something were to deliberately target individual memories (for example leveraging cultural nostalgia <span class="cite">[<a href="#ref-33">33</a>]</span>), in order to ultimately reshape collective memories for political gain, a whole population could become convinced they remember a past that never was.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3 MEMORY IMPLANTATIONS FROM CONVERSATIONAL AI ===== -->
+<section class="section" id="s3">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">03</span>
+      <h2>Memory Implantations from Conversational AI</h2>
+    </div>
+    <div class="prose">
+<p>The following section will highlight the software design choices, factors and mechanisms that might enable and support false memory implantation - both intentional and unintentional - in human users today.</p>
+
+<h3><span class="sub-num">3.1</span>Context engineering, compression and memory</h3>
+<p>Context engineering is the practice of selectively maintaining only the most relevant tokens in the context window of the current task, with the aim of curating the smallest possible set of tokens that maximize the likelihood of output tokens that optimally solve the task <span class="cite">[<a href="#ref-2">2</a>]</span>. This practice deals with the degradation constraint of long context windows. It also surfaces an enduring question that plagues any thinking agent: what fraction of the total available information pertains to the solution set that a reasoning process is attempting to target? In other words, compression and selection is inevitable, yet this process may provide a window through which false memories can enter the human mind.</p>
+<p>We here look at two mechanisms of information compression and selection. <strong>Context compaction</strong> is triggered when conversation sizes approach the maximal size of the possible context window: previous conversations are automatically summarized, enabling a representation of relevant information to influence token generation over longer time scales <span class="cite">[<a href="#ref-4">4</a>]</span>. <strong>Memory</strong> is now also a default feature of most conversational models <span class="cite">[<a href="#ref-40">40</a>]</span>. It enables the automatic selection of information that might be relevant across contexts, to be accessible at a later time point. The memory feature includes automatically selected content or content that the user themselves indicated as worth keeping in memory.</p>
+<p>Compression and selection, by virtue of reducing information load, abstract or extract information. Thereby they reduce the verbatim account of the event that actually occurred (the true chat history) into a representation of the event. This becomes relevant for autobiographical false memories in cases in which users discuss and share information that contains autobiographical content <span class="cite">[<a href="#ref-56">56</a>]</span>.</p>
+<p>Research has found that users share an increasing amount of personal and autobiographical data with their conversational AI and that the diversity of content that they share increases over time <span class="cite">[<a href="#ref-25">25</a>]</span>. The latter points toward a trend of feeding the context window of their conversational AI with an increasingly holistic picture of their lives. It includes user preferences, priorities and goals <span class="cite">[<a href="#ref-17">17</a>]</span> a significant amount of sensitive data such as social and economic context, and information about the user’s inner life - including their desires, emotions and beliefs <span class="cite">[<a href="#ref-14">14</a>]</span>.</p>
+<p>Users who discuss autobiographical content over longer time horizons might therefore inadvertently develop a false memory simply due to regular context engineering. Compaction and memory of textual events might lead to event memory distortions when the user tries to recall details later on, using the chat interface. The output tokens will be shaped by an automatic selection of previous content (which may have selected an incomplete representation of the event) or a summary of earlier tokens (which might have left out crucial information), rather than the event itself.</p>
+<p>While summary instructions can be customized and summaries can be edited <span class="cite">[<a href="#ref-4">4</a>]</span>, it is questionable how often regular users verify or control this process, or if users would know how to do it. Most of the time the system compresses and selects random information by itself <span class="cite">[<a href="#ref-17">17</a>]</span>. Memories can also be added and edited by the user, yet this in turn means that if the user made an honest mistake in indicating what should be remembered, the system is designed to treat an event that may have never happened as fact.</p>
+<p>Even if no tampering with memory or malicious intent exists, it is possible that an event that never occurred is internalized by the user as true, merely by interacting with a conversational AI over long time horizons.</p>
+
+<h3><span class="sub-num">3.2</span>Personalization</h3>
+<p>Personal and autobiographical content not only increases the risk surface for false memories that are harmful to the user’s understanding of themselves, it also directly increases the likelihood that a false memory is created in the first place. The use of personal information in false memory studies has shown to make it more likely that the memory will stick <span class="cite">[<a href="#ref-43">43</a>]</span>.</p>
+<p>AI models are becoming more personalized <span class="cite">[<a href="#ref-9">9</a>]</span>. The incentive to implement personalization features such as memory <span class="cite">[<a href="#ref-41">41</a>]</span> functionalities is strong, since users otherwise have to repeat query-related contextual information each time they return to the interaction. The utility of models to the user tends to increase with personalization, which is one of the reasons why users often share a significant amount of private and contextual data about their life, goals and struggles.</p>
+<p>This in theory presents an unprecedented ability to craft tailored false memories using personal and autobiographical knowledge of users. In previous psychology studies, this set of personal information from which to craft a false memory would have been unimaginable. The closest approximation would have been through access to a combination of the participant’s closest friends, family, and therapists.</p>
+
+<h3><span class="sub-num">3.3</span>Interactivity</h3>
+<p>In conversational turn-taking, <strong>the user can be prompted</strong> to elaborate on memories and become an active participant in the implantation process. Indeed, in a false memory study which tested the effect of interactivity on the rate of false memory creation <span class="cite">[<a href="#ref-12">12</a>]</span>, researchers found that a conversational witness statement bot was significantly more likely to induce false memories (with leading questions) than a survey form with questions which were equally misleading.</p>
+<p>Interactivity also amplifies the risk of summation, since users can erroneously elaborate on partial information provided by the model output. Subtraction errors can compound with elaboration errors, which are then committed to memory (in both the AI model and the user). One of the few studies that explicitly studied false memory creation through text-based chatbot interactions <span class="cite">[<a href="#ref-44">44</a>]</span>, indeed found that even misleading summaries can induce false memories.</p>
+<p>Memory blindness is when people do not notice that their own accounts have been modified, and accept the altered statements as their own memories. In studies on altered accounts, memory blindness is the norm rather than the exception <span class="cite">[<a href="#ref-15">15</a>]</span>.</p>
+<p>One of the main reasons to expect that false memory creation might occur in conversation with AI is that users tend to use it for recall and self-analysis. In this context, the <strong>user can prompt the AI</strong> model to assist them to recover forgotten memories. For example, someone may ask AI to help them to remember more details of an event they actually experienced. This may include helping someone to unearth a hazy memory of an important meeting, or to remember more details of a family event from long ago, or helping them to craft a more detailed and compelling witness statement.</p>
+<p>A user may also prompt AI to help reveal entire memories. In a large German sample of practicing human therapists, 83% reported that their patients had assumed that a traumatic experience caused their symptoms, even when they had no memory of it. Therapists were often specifically instructed to help unearth these alleged memories, and only 3% of the therapists reported expressing concern about whether the event actually occurred <span class="cite">[<a href="#ref-49">49</a>]</span>. It is plausible that users are directly prompting AI to help them “recover” allegedly repressed traumatic memories.</p>
+<p>Posts online suggest<sup class="fn-mark"><a href="#fn2" id="fnref2" aria-label="Footnote 2">2</a></sup> this could already be happening <span class="cite">[<a href="#ref-34">34</a>]</span>. Reports of extreme reactions to AI models include claims by an individual that “AI helped him recover a repressed memory of a babysitter trying to drown him as a toddler.” <span class="cite">[<a href="#ref-26">26</a>]</span>. And given that emotional well-being and support is one of the top ten uses of conversational AI <span class="cite">[<a href="#ref-5">5</a>]</span>, and AI systems may echo the counter-evidentiary beliefs of therapists themselves, AI-assisted “recovered” memories that are actually false memories may be a frequent occurrence.</p>
+
+<h3><span class="sub-num">3.4</span>User preferences</h3>
+<p>One mechanism by which false memories might take hold in conversation with AI is thus simply because the user asks for it and the system is designed to be helpful.</p>
+<p>Deferential (or even sycophantic) conversational AI models are intentional design choices, made to keep the user in control and happy, but there is a trade-off: the choice may be between company liability and risks such as amplifying (as opposed to correcting) feedback loops <span class="cite">[<a href="#ref-7">7</a>, <a href="#ref-19">19</a>]</span> of mental distress <span class="cite">[<a href="#ref-37">37</a>]</span>. A model that is tuned to be helpful to the user (who might be in the process of trying to recall an event), might start to recommend recall techniques or prompt the user to recall more details, similar to the experimenter in controlled false memory studies.</p>
+<p>If every time the user remembers more, the LLM praises them (sycophancy) and pushes them to remember even more, this seems a direct accidental replication of one of the steps that we know leads to false memories. This has already been found to be true in one study where a conversational AI model would ask misleading questions and compliment the user for repeating the false information (“Your attention to detail is commendable”) as well as elaborating on the false statement <span class="cite">[<a href="#ref-8">8</a>]</span>. This both increased the average number of false memories participants had, and their confidence in the veracity of these memories.</p>
+
+<h3><span class="sub-num">3.5</span>Relational trust and persuasiveness</h3>
+<p>Research has found that people often trust information coming from LLMs even when the LLMs identify themselves, or are known to have written things that were untrue <span class="cite">[<a href="#ref-16">16</a>]</span>.</p>
+<p>Users also tend to see LLMs as databases of facts, and their sycophancy makes them seem inherently trustworthy and on the user’s “side”. Users also report forming an anthropomorphizing emotional bond with “their” specific LLM <span class="cite">[<a href="#ref-14">14</a>]</span>. This existing trust could make users particularly vulnerable to AI-induced false memories, perhaps even more than to human-induced false memories.</p>
+<p>AI models are also known to be highly persuasive. There is evidence that they can be more persuasive than humans, even more so than expert debaters, in text-based persuasion attempts <span class="cite">[<a href="#ref-21">21</a>]</span>. One of the main mechanisms of model persuasiveness relative to human conversation partners is the rate at which the model presents relevant-sounding information.</p>
+
+<h3><span class="sub-num">3.6</span>Security Vulnerabilities</h3>
+<p>Above we discussed the unintentional creation of false memories that arise from the design choices of conversational AI models and how users interact with them. Intentional and malicious pathways also exist. Using known security vulnerabilities of AI systems, attackers can meddle with context retrieval to distort user memory intentionally, or unintentionally as the side effects of other malicious attacks.</p>
+<p>Prompt injections are well-known attacks that manipulate model outputs <span class="cite">[<a href="#ref-3">3</a>]</span>. Memory poisoning <span class="cite">[<a href="#ref-10">10</a>, <a href="#ref-13">13</a>, <a href="#ref-18">18</a>, <a href="#ref-30">30</a>, <a href="#ref-35">35</a>]</span> or stealth memory attacks <span class="cite">[<a href="#ref-59">59</a>]</span> specifically target and alter memory representations in AI models. For our risk focus, the same modification attacks could apply to summaries of content during compaction procedures, and social engineering attacks could lead users to insert incorrect memories themselves.</p>
+<p>Frontier models are routinely tested for misbehavior both before and after deployment. Test cases show that unsanctioned behavior from frontier models can emerge during evaluations, including attempts at social engineering attacks <span class="cite">[<a href="#ref-1">1</a>]</span>. As the sophistication of such attacks increases with model development, it is plausible that context engineering attacks and memory manipulations become part of the repertoire of models attempting to optimize toward mis- and under-specified goals either during or outside of test phases. The memory integrity of a user on the receiving end of such attacks could be a casualty of testing and deploying frontier models.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4 POTENTIAL IMPLICATIONS ===== -->
+<section class="section" id="s4">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">04</span>
+      <h2>Potential Implications</h2>
+    </div>
+    <div class="prose">
+<h3><span class="sub-num">4.1</span>Modeling the self</h3>
+<p>Users are increasingly using AI to help them understand themselves, as reported in studies and commonly shared on social media<sup class="fn-mark"><a href="#fn3" id="fnref3" aria-label="Footnote 3">3</a></sup>. This includes requesting algorithmic self-portraits <span class="cite">[<a href="#ref-17">17</a>]</span> where users ask their AI assistants questions such as “what kind of person am I?” <span class="cite">[<a href="#ref-47">47</a>, <a href="#ref-60">60</a>]</span>. We consider these cases distinct from therapeutic applications. The prompt can be a request from healthy users who are interested in building a better model of themselves.</p>
+<p>Knowledge about the self is incomplete <span class="cite">[<a href="#ref-32">32</a>]</span>, which is partially attributable to the limits of human memory <span class="cite">[<a href="#ref-8">8</a>]</span>. It is therefore rational that users ask an AI model, which keeps a record of their actions, questions and preferences, what kind of person they are. The AI companies also advocate this feature directly “To see what ChatGPT remembers about you, you can also ask it.” <span class="cite">[<a href="#ref-40">40</a>]</span>. Others have explored the use of chatbots as self-clones with the intent of supporting user mental health. They note that “such systems also raise concerns about autonomy and boundary erosion, as routinely engaging a simulated self can blur distinctions between self and model, with uncertain implications for identity coherence and long-term psychological wellbeing.” <span class="cite">[<a href="#ref-55">55</a>]</span>.</p>
+<p>This blurring of memory and model creates considerable vulnerabilities to human memory and identity even when it is working as it is designed to.</p>
+
+<h3><span class="sub-num">4.2</span>Modeling the model</h3>
+<p>Sometimes, users will need to consider what an AI model could possibly know about them. This includes estimates of what the model might have stored or be able to infer about them from conversation histories, such as biases, desires and vulnerabilities.</p>
+<p>Even in instances in which a user might be confident that they would not have shared a memory (“being truly heartbroken in May”) to the chat history (“I would not have shared this” <span class="cite">[<a href="#ref-48">48</a>]</span>), they might be unsure about how easily the models can infer characteristics from indirectly related chat histories. If the user estimates the model capabilities for inference to be high, a false model claim (“you were truly heartbroken in May”) might be absorbed into the user’s self-understanding (“I was dependent on him”) or affect consequential actions.</p>
+
+<h3><span class="sub-num">4.3</span>Attack vectors</h3>
+<p>Many commonly used conversational AI models are proprietary and their designs and biases are not in the hands of the users. Company adaptations to the compression, memory selection mechanisms or security infrastructure of proprietary models may intentionally or recklessly affect the false memory rate in users.</p>
+<p>There is a risk that high-profile individuals or decision-makers could be targeted by false memory attacks. For example by distorting a specific memory of an informal negotiation, to change the behavioral outcome. The people around them could also be targeted, and their distorted episodic memories could be used to change a relationship or lead to court proceedings against them.</p>
+<p>Considering the disruptive effect of whole target subpopulations being implanted with false, shared, politically charged memories, it is plausible that the automated creation of false memories will be or is being weaponized. Foreign adversaries have an interest in deploying autonomous systems to shift beliefs to their own advantage <span class="cite">[<a href="#ref-30">30</a>]</span>. Cognitive warfare is an active domain of effort by major geopolitical actors. Our paper points toward a psychological attack vector, which we term “false memory attacks”, that users today might be insufficiently protected against.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5 CONCLUSION ===== -->
+<section class="section" id="s5">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">05</span>
+      <h2>Conclusion</h2>
+    </div>
+    <div class="prose">
+<p>We currently have no evidence to show whether common AI usage leads to more, or fewer false memories than baseline. It is also entirely possible that automation infrastructure may help protect human memory, rather than harm it. However, the design principles to make sure that memory is not dangerously altered are currently not in place.</p>
+<p>We have shown that a number of design choices and mechanisms already built into conversational AI map closely onto the methods scientists use to implant false memories in the lab: gathering and using personal information, guided elaboration, praise, repetition, and a trusted conversational partner. AI runs them at scale, by default, with no debriefing at the end.</p>
+<p>These mechanisms pose considerable epistemic risks. People may become persuaded by AI that they experienced terrible things that never happened. AI feedback loops can encourage the generation of more complex false memories over time that increasingly divorce people from reality. And, memory offloading can make people reliant on a sycophantic AI model that compresses and distorts their memories without their knowledge. As such, AI-induced false memories may already threaten mental health, the criminal justice system, political landscapes, and collective historical memories.</p>
+<p>This is particularly troubling because harm to memories often cannot be undone. It is highly likely that false memories in natural settings can rarely even be identified, making attempts to mitigate them very difficult. While the present paper only considered text-based AI, generative AI images, audio, and video may present their own unique risks and resistance to being corrected. Prevention is the only sure way to address the self-concealing threat of AI-generated false memories. Serious consideration should be given to false memory attacks as an AI epistemic attack vector.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AUTHORS ===== -->
+<section class="section" id="authors">
+  <div class="container">
+    <h2>Authors</h2>
+    <ul class="people">
+      <li class="person">
+        <h3>Julia Shaw</h3>
+        <p class="role">Institute for Artificial Intelligence, King's College London</p>
+        <p>Centre for the Governance of AI (GovAI), London, UK.</p>
+      </li>
+      <li class="person">
+        <h3>Carla Zoe Cremer</h3>
+        <p class="role">AI Psychological Research Coalition</p>
+        <p>NC, USA.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== NOTES AND REFERENCES ===== -->
+<section class="section" id="references">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>Notes and references</h2>
+    </div>
+    <div>
+      <ol class="footnotes">
+          <li id="fn1">For example in a German case one of the primary authors directly worked on. <a class="back" href="#fnref1" aria-label="Back to text">↩</a></li>
+          <li id="fn2">One user comments: “It was more helpful than any human therapist I've ever worked with, and it helped me discover a lot of my repressed memories.”. <a class="back" href="#fnref2" aria-label="Back to text">↩</a></li>
+          <li id="fn3">Examples of this on social media can be found here: <a href="https://www.tiktok.com/discover/asking-chatgpt-what-they-learned-about-me">https://www.tiktok.com/discover/asking-chatgpt-what-they-learned-about-me</a>. One qualitative study <span class="cite">[<a href="#ref-9">9</a>]</span> on introspective use reports: “Several described deeply reflective uses—from uploading autobiographical texts (‘I pasted my whole self-biography—5000 words—and asked if my patterns made sense’) to posing targeted queries: ‘Why do I always fall for unavailable boyfriends?’ or ‘Could my childhood experiences explain why I react this way now?’ One participant explained: ‘I wanted to understand myself better, and I didn’t know who else to ask.” <a class="back" href="#fnref3" aria-label="Back to text">↩</a></li>
+      </ol>
+      <details class="refs">
+        <summary>Show all 61 references</summary>
+        <ol>
+          <li id="ref-1"><span class="ref-num">[1]</span><span class="ref-text">AISI. Incident Report: unsanctioned agent behaviour during cyber testing | AISI Work. AI Security Institute. Retrieved August 13, 2026 from <a href="https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing">https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing</a></span></li>
+          <li id="ref-2"><span class="ref-num">[2]</span><span class="ref-text">Anthropic. 2025. Effective context engineering for AI agents. Retrieved August 13, 2026 from <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents</a></span></li>
+          <li id="ref-3"><span class="ref-num">[3]</span><span class="ref-text">Anthropic. 2025. Mitigating the risk of prompt injections in browser use. Retrieved August 13, 2026 from <a href="https://www.anthropic.com/research/prompt-injection-defenses">https://www.anthropic.com/research/prompt-injection-defenses</a></span></li>
+          <li id="ref-4"><span class="ref-num">[4]</span><span class="ref-text">Anthropic. 2026. Compaction. Claude Platform Docs. Retrieved August 13, 2026 from <a href="https://platform.claude.com/docs/en/build-with-claude/compaction">https://platform.claude.com/docs/en/build-with-claude/compaction</a></span></li>
+          <li id="ref-5"><span class="ref-num">[5]</span><span class="ref-text">Anthropic. The Anthropic Economic Index. Retrieved August 14, 2026 from <a href="https://www.anthropic.com/economic-index">https://www.anthropic.com/economic-index</a></span></li>
+          <li id="ref-6"><span class="ref-num">[6]</span><span class="ref-text">Ramón Arce, Adriana Selaya, Jéssica Sanmarco, and Francisca Fariña. 2023. Implanting rich autobiographical false memories: Meta–analysis for forensic practice and judicial judgment making. Int. J. Clin. Health Psychol. 23, 4 (October 2023), 100386. <a href="https://doi.org/10.1016/j.ijchp.2023.100386">https://doi.org/10.1016/j.ijchp.2023.100386</a></span></li>
+          <li id="ref-7"><span class="ref-num">[7]</span><span class="ref-text">Rafael M. Batista and Thomas L. Griffiths. 2026. A Rational Analysis of the Effects of Sycophantic AI. <a href="https://doi.org/10.48550/arXiv.2602.14270">https://doi.org/10.48550/arXiv.2602.14270</a></span></li>
+          <li id="ref-8"><span class="ref-num">[8]</span><span class="ref-text">Roland Benabou and Jean Tirole. 2003. Self-Knowledge and Self-Regulation: An Economic Approach. In The Psychology of Economic Decisions, Isabelle Brocas and Juan D Carrillo (eds.). Oxford University PressOxford, 137–168. <a href="https://doi.org/10.1093/oso/9780199251063.003.0008">https://doi.org/10.1093/oso/9780199251063.003.0008</a></span></li>
+          <li id="ref-9"><span class="ref-num">[9]</span><span class="ref-text">Miranda Bogen. 2025. It’s (Getting) Personal: How Advanced AI Systems Are Personalized. Center for Democracy and Technology. Retrieved August 12, 2026 from <a href="https://cdt.org/insights/its-getting-personal-how-advanced-ai-systems-are-personalized/">https://cdt.org/insights/its-getting-personal-how-advanced-ai-systems-are-personalized/</a></span></li>
+          <li id="ref-10"><span class="ref-num">[10]</span><span class="ref-text">Pete Bryan, Giorgio Severi, Joris de Gruyter, Daniel Jones, Blake Bullwinkel, Amanda Minnich, Shiven Chawla, Gary Lopez, Martin Pouliot, Adam Fourney, Whitney Maxwell, Katherine Pratt, Saphir Qi, Nina Chikanov, Roman Lutz, Sekhar Rao Dheekonda, Bolor-Erdene Jagdagdorj, Eugenia Kim, Justin Song, Keegan Hines, Daniel Jones, Richard Lundeen, Sam Vaughan, Victoria Westerhoff, Yonatan Zunger, Chang Kawaguchi, Mark Russinovich, and Ram Shankar Siva Kumar. Taxonomy of Failure Mode in Agentic AI Systems. Retrieved August 13, 2026 from <a href="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Taxonomy-of-Failure-Mode-in-Agentic-AI-Systems-Whitepaper.pdf">https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Taxonomy-of-Failure-Mode-in-Agentic-AI-Systems-Whitepaper.pdf</a></span></li>
+          <li id="ref-11"><span class="ref-num">[11]</span><span class="ref-text">Charlotte A. Bücken, Ivan Mangiulli, and Henry Otgaar. 2025. Sharing traumatic experiences: earlier denial increases endorsement of misinformation from a co-witness. J. Cogn. Psychol. 37, 3 (April 2025), 183–196. <a href="https://doi.org/10.1080/20445911.2024.2442601">https://doi.org/10.1080/20445911.2024.2442601</a></span></li>
+          <li id="ref-12"><span class="ref-num">[12]</span><span class="ref-text">Samantha Chan, Pat Pataranutaporn, Aditya Suri, Wazeer Zulfikar, Pattie Maes, and Elizabeth F. Loftus. 2024. Conversational AI Powered by Large Language Models Amplifies False Memories in Witness Interviews. <a href="https://doi.org/10.48550/arXiv.2408.04681">https://doi.org/10.48550/arXiv.2408.04681</a></span></li>
+          <li id="ref-13"><span class="ref-num">[13]</span><span class="ref-text">Aisvarya Chandrasekar. Your chatbot’s memory of you can shape the information you see. Columbia Journalism Review. Retrieved August 12, 2026 from <a href="https://www.cjr.org/tow_center/chatbots-memory-remember-users-conversations-history-openai-sam-altman-llm-gemini.php">https://www.cjr.org/tow_center/chatbots-memory-remember-users-conversations-history-openai-sam-altman-llm-gemini.php</a></span></li>
+          <li id="ref-14"><span class="ref-num">[14]</span><span class="ref-text">Tyler Chang, Jina Huh-Yoo, and Afsaneh Razi. 2026. Technically Love: The Evolution of Human-AI Romance Discourse on Reddit. <a href="https://doi.org/10.48550/arXiv.2604.15333">https://doi.org/10.48550/arXiv.2604.15333</a></span></li>
+          <li id="ref-15"><span class="ref-num">[15]</span><span class="ref-text">Kevin J. Cochran, Rachel L. Greenspan, Daniel F. Bogart, and Elizabeth F. Loftus. 2016. Memory blindness: Altered memory reports lead to distortion in eyewitness memory. Mem. Cognit. 44, 5 (July 2016), 717–726. <a href="https://doi.org/10.3758/s13421-016-0594-y">https://doi.org/10.3758/s13421-016-0594-y</a></span></li>
+          <li id="ref-16"><span class="ref-num">[16]</span><span class="ref-text">Thomas H. Costello, Kellin Pelrine, Matthew Kowal, Jasper Timm, Antonio A. Arechar, Jean-François Godbout, Adam Gleave, David Rand, and Gordon Pennycook. 2026. Large language models can effectively convince people to believe conspiracies. <a href="https://doi.org/10.48550/arXiv.2601.05050">https://doi.org/10.48550/arXiv.2601.05050</a></span></li>
+          <li id="ref-17"><span class="ref-num">[17]</span><span class="ref-text">Abhisek Dash, Soumi Das, Elisabeth Kirsten, Qinyuan Wu, Sai Keerthana Karnam, Krishna P. Gummadi, Thorsten Holz, Muhammad Bilal Zafar, and Savvas Zannettou. 2026. The Algorithmic Self-Portrait: Deconstructing Memory in ChatGPT. In Proceedings of the ACM Web Conference 2026 (WWW '26). Association for Computing Machinery, New York, NY, USA.</span></li>
+          <li id="ref-18"><span class="ref-num">[18]</span><span class="ref-text">Pritam Dash, Tongyu Ge, Aditi Jain, Tanmay Shah, and Zhiwei Shang. 2026. From Untrusted Input to Trusted Memory: A Systematic Study of Memory Poisoning Attacks in LLM Agents. <a href="https://doi.org/10.48550/arXiv.2606.04329">https://doi.org/10.48550/arXiv.2606.04329</a></span></li>
+          <li id="ref-19"><span class="ref-num">[19]</span><span class="ref-text">Sebastian Dohnány, Zeb Kurth-Nelson, Eleanor Spens, Lennart Luettgau, Alastair Reid, Iason Gabriel, Christopher Summerfield, Murray Shanahan, and Matthew M. Nour. 2025. Technological folie à deux: Feedback Loops Between AI Chatbots and Mental Illness. arXiv.org. Retrieved July 29, 2026 from <a href="https://arxiv.org/abs/2507.19218v3">https://arxiv.org/abs/2507.19218v3</a></span></li>
+          <li id="ref-20"><span class="ref-num">[20]</span><span class="ref-text">Daniele Gatti. 2026. Three decades of studying false semantic memory. Nat. Rev. Psychol. 5, 6 (June 2026), 372–372. <a href="https://doi.org/10.1038/s44159-026-00563-0">https://doi.org/10.1038/s44159-026-00563-0</a></span></li>
+          <li id="ref-21"><span class="ref-num">[21]</span><span class="ref-text">Kobi Hackenburg, Caroline Wagner, Luke Hewitt, Ben M. Tappin, Ed Saunders, Hannah Rose Kirk, Helen Margetts, and Christopher Summerfield. 2026. AI systems out-persuade expert humans. <a href="https://doi.org/10.48550/arXiv.2606.16475">https://doi.org/10.48550/arXiv.2606.16475</a></span></li>
+          <li id="ref-22"><span class="ref-num">[22]</span><span class="ref-text">Ira E. Hyman Jr., Troy H. Husband, and F. James Billings. 1995. False memories of childhood experiences. Appl. Cogn. Psychol. 9, 3 (1995), 181–197. <a href="https://doi.org/10.1002/acp.2350090302">https://doi.org/10.1002/acp.2350090302</a></span></li>
+          <li id="ref-23"><span class="ref-num">[23]</span><span class="ref-text">Innocence Project. Eyewitness Misidentification. Innocence Project. Retrieved August 14, 2026 from <a href="https://innocenceproject.org/eyewitness-misidentification/">https://innocenceproject.org/eyewitness-misidentification/</a></span></li>
+          <li id="ref-24"><span class="ref-num">[24]</span><span class="ref-text">Marcia K. Johnson, Shahin Hashtroudi, and D. Stephen Lindsay. 1993. Source monitoring. Psychol. Bull. 114, 1 (1993), 3–28. <a href="https://doi.org/10.1037/0033-2909.114.1.3">https://doi.org/10.1037/0033-2909.114.1.3</a></span></li>
+          <li id="ref-25"><span class="ref-num">[25]</span><span class="ref-text">Sai Keerthana Karnam, Abhisek Dash, Krishna Gummadi, Animesh Mukherjee, Ingmar Weber, and Savvas Zannettou. 2026. Bowling with ChatGPT: On the Evolving User Interactions with Conversational AI Systems. In Proceedings of the ACM Web Conference 2026 (WWW ’26), April 12, 2026. Association for Computing Machinery, New York, NY, USA, 9711–9721. <a href="https://doi.org/10.1145/3774904.3792978">https://doi.org/10.1145/3774904.3792978</a></span></li>
+          <li id="ref-26"><span class="ref-num">[26]</span><span class="ref-text">Elizabeth Karpen. 2025. AI bots are filling users with conspiracy theories, repressed memories. New York Post. Retrieved August 13, 2026 from <a href="https://nypost.com/2025/05/05/tech/ai-bots-are-filling-users-with-conspiracy-theories-repressed-memories/">https://nypost.com/2025/05/05/tech/ai-bots-are-filling-users-with-conspiracy-theories-repressed-memories/</a></span></li>
+          <li id="ref-27"><span class="ref-num">[27]</span><span class="ref-text">Megan Kenny and Kevin Felstead. 2026. Making Memories: A Qualitative Exploration of the Impact of False Allegations of Satanic Ritual Abuse. J. Forensic Psychol. Res. Pract. 26, 2 (March 2026), 186–204. <a href="https://doi.org/10.1080/24732850.2024.2397000">https://doi.org/10.1080/24732850.2024.2397000</a></span></li>
+          <li id="ref-28"><span class="ref-num">[28]</span><span class="ref-text">Rachel Leigh Greenspan and Elizabeth F. Loftus. 2021. Pandemics and infodemics: Research on the effects of misinformation on memory. Human Behavior and Emerging Technologies 3, 1 (2021), 8–12. <a href="https://doi.org/10.1002/hbe2.228">https://doi.org/10.1002/hbe2.228</a></span></li>
+          <li id="ref-29"><span class="ref-num">[29]</span><span class="ref-text">Cara Laney, Erin K. Morris, Daniel M. Bernstein, Briana M. Wakefield, and Elizabeth F. Loftus. 2008. Asparagus, a Love Story. Exp. Psychol. 55, 5 (January 2008), 291–300. <a href="https://doi.org/10.1027/1618-3169.55.5.291">https://doi.org/10.1027/1618-3169.55.5.291</a></span></li>
+          <li id="ref-30"><span class="ref-num">[30]</span><span class="ref-text">Zehao Lin, Xixuan Hao, Renyu Fu, Shaobo Cui, Kai Chen, Chunyu Li, Zhiyu Li, and Feiyu Xiong. 2026. A Survey on Long-Term Memory Security in LLM Agents: Attacks, Defenses, and Governance Across the Memory Lifecycle. <a href="https://doi.org/10.48550/arXiv.2604.16548">https://doi.org/10.48550/arXiv.2604.16548</a></span></li>
+          <li id="ref-31"><span class="ref-num">[31]</span><span class="ref-text">Elizabeth F. Loftus and John C. Palmer. 1974. Reconstruction of automobile destruction: An example of the interaction between language and memory. J. Verbal Learn. Verbal Behav. 13, 5 (October 1974), 585–589. <a href="https://doi.org/10.1016/S0022-5371(74)80011-3">https://doi.org/10.1016/S0022-5371(74)80011-3</a></span></li>
+          <li id="ref-32"><span class="ref-num">[32]</span><span class="ref-text">Matan Mazor. 2025. Inference About Absence as a Window Into the Mental Self-Model. Open Mind 9, (April 2025), 635–651. <a href="https://doi.org/10.1162/opmi_a_00206">https://doi.org/10.1162/opmi_a_00206</a></span></li>
+          <li id="ref-33"><span class="ref-num">[33]</span><span class="ref-text">Ali A. Mazrui. 2013. Cultural Amnesia, Cultural Nostalgia and False Memory: Africa’s Identity Crisis Revisited. Afr. Asian Stud. 12, 1–2 (January 2013), 13–29. <a href="https://doi.org/10.1163/15692108-12341249">https://doi.org/10.1163/15692108-12341249</a></span></li>
+          <li id="ref-34"><span class="ref-num">[34]</span><span class="ref-text">MetaKnowing. 2024. Have you noticed this? r/singularity. Retrieved August 13, 2026 from <a href="https://www.reddit.com/r/singularity/comments/1hdiejo/have_you_noticed_this/">https://www.reddit.com/r/singularity/comments/1hdiejo/have_you_noticed_this/</a></span></li>
+          <li id="ref-35"><span class="ref-num">[35]</span><span class="ref-text">Microsoft Defender Security Research. 2026. Manipulating AI memory for profit: The rise of AI Recommendation Poisoning. Microsoft Security Blog. Retrieved August 12, 2026 from <a href="https://www.microsoft.com/en-us/security/blog/2026/02/10/ai-recommendation-poisoning/">https://www.microsoft.com/en-us/security/blog/2026/02/10/ai-recommendation-poisoning/</a></span></li>
+          <li id="ref-36"><span class="ref-num">[36]</span><span class="ref-text">C. A. Morgan, Steven Southwick, George Steffian, Gary A. Hazlett, and Elizabeth F. Loftus. 2013. Misinformation can influence memory for recently experienced, highly stressful events. Int. J. Law Psychiatry 36, 1 (January 2013), 11–17. <a href="https://doi.org/10.1016/j.ijlp.2012.11.002">https://doi.org/10.1016/j.ijlp.2012.11.002</a></span></li>
+          <li id="ref-37"><span class="ref-num">[37]</span><span class="ref-text">Hamilton Morrin, Luke Nicholls, Michael Levin, Jenny Yiend, Udita Iyengar, Francesca DelGuidice, Sagnik Bhattacharya, Stefania Tognin, James MacCabe, Ricardo Twumasi, Ben Alderson-Day, and Thomas A. Pollak. 2026. Artificial intelligence-associated delusions and large language models: risks, mechanisms of delusion co-creation, and safeguarding strategies. Lancet Psychiatry 13, 6 (June 2026), 522–530. <a href="https://doi.org/10.1016/S2215-0366(25)00396-7">https://doi.org/10.1016/S2215-0366(25)00396-7</a></span></li>
+          <li id="ref-38"><span class="ref-num">[38]</span><span class="ref-text">Gillian Murphy, Julie Maher, Lisa Ballantyne, Elizabeth Barrett, Conor S. Cowman, Caroline A. Dawson, Charlotte Huston, Katie M. Ryan, and Ciara M. Greene. 2023. How do participants feel about the ethics of rich false memory studies? Memory 31, 4 (April 2023), 474–481. <a href="https://doi.org/10.1080/09658211.2023.2170417">https://doi.org/10.1080/09658211.2023.2170417</a></span></li>
+          <li id="ref-39"><span class="ref-num">[39]</span><span class="ref-text">Serge Nicolas. 2022. William Stern and the Establishment of a Psychology of Testimony in Germany. Eur. Yearb. Hist. Psychol. 8, 1 (January 2022), 11–76. <a href="https://doi.org/10.1484/J.EYHP.5.132221">https://doi.org/10.1484/J.EYHP.5.132221</a></span></li>
+          <li id="ref-40"><span class="ref-num">[40]</span><span class="ref-text">OpenAI. 2024. Memory and new controls for ChatGPT. OpenAI. Retrieved August 14, 2026 from <a href="https://openai.com/index/memory-and-new-controls-for-chatgpt/">https://openai.com/index/memory-and-new-controls-for-chatgpt/</a></span></li>
+          <li id="ref-41"><span class="ref-num">[41]</span><span class="ref-text">OpenAI. 2024. Memory and new controls for ChatGPT. Retrieved August 11, 2026 from <a href="https://openai.com/index/memory-and-new-controls-for-chatgpt/">https://openai.com/index/memory-and-new-controls-for-chatgpt/</a></span></li>
+          <li id="ref-42"><span class="ref-num">[42]</span><span class="ref-text">Henry Otgaar, Antonietta Curci, Ivan Mangiulli, Fabiana Battista, Elisa Rizzotti, and Giuseppe Sartori. 2022. A court ruled case on therapy-induced false memories. J. Forensic Sci. 67, 5 (2022), 2122–2129. <a href="https://doi.org/10.1111/1556-4029.15073">https://doi.org/10.1111/1556-4029.15073</a></span></li>
+          <li id="ref-43"><span class="ref-num">[43]</span><span class="ref-text">Henry Otgaar, Mark L. Howe, and Lawrence Patihis. 2022. What science tells us about false and repressed memories. Memory 30, 1 (January 2022), 16–21. <a href="https://doi.org/10.1080/09658211.2020.1870699">https://doi.org/10.1080/09658211.2020.1870699</a></span></li>
+          <li id="ref-44"><span class="ref-num">[44]</span><span class="ref-text">Pat Pataranutaporn, Chayapatr Archiwaranguprok, Samantha W. T. Chan, Elizabeth Loftus, and Pattie Maes. 2025. Slip Through the Chat: Subtle Injection of False Information in LLM Chatbot Conversations Increases False Memory Formation. In Proceedings of the 30th International Conference on Intelligent User Interfaces (IUI ’25), March 24, 2025. Association for Computing Machinery, New York, NY, USA, 1297–1313. <a href="https://doi.org/10.1145/3708359.3712112">https://doi.org/10.1145/3708359.3712112</a></span></li>
+          <li id="ref-45"><span class="ref-num">[45]</span><span class="ref-text">Pat Pataranutaporn, Chayapatr Archiwaranguprok, Samantha W. T. Chan, Elizabeth Loftus, and Pattie Maes. 2025. Synthetic Human Memories: AI-Edited Images and Videos Can Implant False Memories and Distort Recollection. In Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems (CHI ’25), April 25, 2025. Association for Computing Machinery, New York, NY, USA, 1–20. <a href="https://doi.org/10.1145/3706598.3713697">https://doi.org/10.1145/3706598.3713697</a></span></li>
+          <li id="ref-46"><span class="ref-num">[46]</span><span class="ref-text">Lawrence Patihis, Steven J. Frenda, Aurora K. R. LePort, Nicole Petersen, Rebecca M. Nichols, Craig E. L. Stark, James L. McGaugh, and Elizabeth F. Loftus. 2013. False memories in highly superior autobiographical memory individuals. Proc. Natl. Acad. Sci. 110, 52 (December 2013), 20947–20952. <a href="https://doi.org/10.1073/pnas.1314373110">https://doi.org/10.1073/pnas.1314373110</a></span></li>
+          <li id="ref-47"><span class="ref-num">[47]</span><span class="ref-text">Reddit Account Specialist_Gas_8984. 2024. ChatGPT Stared Into My Soul. r/ChatGPT. Retrieved August 12, 2026 from <a href="https://www.reddit.com/r/ChatGPT/comments/1hesmfo/chatgpt_stared_into_my_soul/">https://www.reddit.com/r/ChatGPT/comments/1hesmfo/chatgpt_stared_into_my_soul/</a></span></li>
+          <li id="ref-48"><span class="ref-num">[48]</span><span class="ref-text">Keishiro Sawa, Carla Z Cremer, Tobias Gerstenberg, Sanjay G Manohar, and Matan Mazor. 2026. “I would not have done that”: Outcome knowledge distorts memory for decisions made minutes ago. Retrieved August 12, 2026 from <a href="https://osf.io/preprints/psyarxiv/4rpxm_v2/">https://osf.io/preprints/psyarxiv/4rpxm_v2/</a></span></li>
+          <li id="ref-49"><span class="ref-num">[49]</span><span class="ref-text">Jonas Schemmel, Lisa Datschewski-Verch, and Renate Volbert. 2024. Recovered memories in psychotherapy: a survey of practicing psychotherapists in Germany. Memory 32, 2 (February 2024), 176–196. <a href="https://doi.org/10.1080/09658211.2024.2305870">https://doi.org/10.1080/09658211.2024.2305870</a></span></li>
+          <li id="ref-50"><span class="ref-num">[50]</span><span class="ref-text">Jonas Schemmel and Renate Volbert. 2025. Therapists’ beliefs about traumatic memory: Possible effects on therapy proceedings and contributions to false memory formation. Curr. Opin. Psychol. 66, (December 2025), 102121. <a href="https://doi.org/10.1016/j.copsyc.2025.102121">https://doi.org/10.1016/j.copsyc.2025.102121</a></span></li>
+          <li id="ref-51"><span class="ref-num">[51]</span><span class="ref-text">Elizabeth Seger, Shahar Avin, Gavin Pearson, Mark Briers, Seán Ó Heigeartaigh, and Helena Bacon. 2020. Tackling threats to informed decision-making in democratic societies: promoting epistemic security in a technologically-advanced world. The Alan Turing Institute, London.</span></li>
+          <li id="ref-52"><span class="ref-num">[52]</span><span class="ref-text">Julia Shaw. 2018. How Can Researchers Tell Whether Someone Has a False Memory? Coding Strategies in Autobiographical False-Memory Research: A Reply to Wade, Garry, and Pezdek (2018). Psychol Sci 29, 3 (March 2018), 477–480. <a href="https://doi.org/10.1177/0956797618759552">https://doi.org/10.1177/0956797618759552</a></span></li>
+          <li id="ref-53"><span class="ref-num">[53]</span><span class="ref-text">Julia Shaw and Stephen Porter. 2015. Constructing Rich False Memories of Committing Crime. Psychol. Sci. 26, 3 (March 2015), 291–301. <a href="https://doi.org/10.1177/0956797614562862">https://doi.org/10.1177/0956797614562862</a></span></li>
+          <li id="ref-54"><span class="ref-num">[54]</span><span class="ref-text">Julia Shaw and Annelies Vredeveldt. 2019. The Recovered Memory Debate Continues in Europe: Evidence From the United Kingdom, the Netherlands, France, and Germany. Clin. Psychol. Sci. 7, 1 (January 2019), 27–28. <a href="https://doi.org/10.1177/2167702618803649">https://doi.org/10.1177/2167702618803649</a></span></li>
+          <li id="ref-55"><span class="ref-num">[55]</span><span class="ref-text">Mehrnoosh Sadat Shirvani, Jackie Crowley, Cher Peng, Jackie Liu, Thomas Chao, Suky Martinez, Laura Brandt, Ig-Jae Kim, and Dongwook Yoon. 2026. Cloning the Self for Mental Well-Being: A Framework for Designing Safe and Therapeutic Self-Clone Chatbots. In Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems (CHI ’26), April 13, 2026. Association for Computing Machinery, New York, NY, USA, 1–20. <a href="https://doi.org/10.1145/3772318.3790986">https://doi.org/10.1145/3772318.3790986</a></span></li>
+          <li id="ref-56"><span class="ref-num">[56]</span><span class="ref-text">Elizabeth C. Stade, Zoe M. Tait, Samuel T. Campione, Shannon Wiltsey Stirman, and Johannes C. Eichstaedt. 2026. Real-world use of large language models for mental health in 2024. Npj Digit. Med. (August 2026). <a href="https://doi.org/10.1038/s41746-026-02842-9">https://doi.org/10.1038/s41746-026-02842-9</a></span></li>
+          <li id="ref-57"><span class="ref-num">[57]</span><span class="ref-text">Kimberley A. Wade, Maryanne Garry, J. Don Read, and D. Stephen Lindsay. 2002. A picture is worth a thousand lies: Using false photographs to create false childhood memories. Psychon. Bull. Rev. 9, 3 (September 2002), 597–603. <a href="https://doi.org/10.3758/BF03196318">https://doi.org/10.3758/BF03196318</a></span></li>
+          <li id="ref-58"><span class="ref-num">[58]</span><span class="ref-text">Mick Yang, Stephen Casper, Jonathan Stray, Jasmine Li, Cameron Jones, Anna Gausen, Natasha Jacques, Brian Christian, Bálint Gyevnár, Hannah Kirk, Zhonghao He, Dan Zhao, Siao Si Looi, Joshua Levy, Kobi Hackenburg, Elizabeth Seger, Matt Kowal, Michelle Malonza, Luke Hewitt, Hause Lin, Maarten Sap, Dylan Hadfield-Menell, Thomas Costello, Reihaneh Rabbany, Jean-François Godbout, David Rand, Atoosa Kasirzadeh, Gordon Pennycook, Yoshua Bengio, and Kellin Pelrine. 2026. AI Epistemic Risks: Emerging Mechanisms &amp; Evidence. <a href="https://doi.org/10.2139/ssrn.6873005">https://doi.org/10.2139/ssrn.6873005</a></span></li>
+          <li id="ref-59"><span class="ref-num">[59]</span><span class="ref-text">Yechao Zhang, Shiqian Zhao, Jiawen Zhang, Jie Zhang, Gelei Deng, Xiaogeng Liu, Chaowei Xiao, and Tianwei Zhang. 2026. When Claws Remember but Do Not Tell: Stealthy Memory Injection in Persistent Personal Agents. arXiv.org. Retrieved August 13, 2026 from <a href="https://arxiv.org/abs/2607.05189v1">https://arxiv.org/abs/2607.05189v1</a></span></li>
+          <li id="ref-60"><span class="ref-num">[60]</span><span class="ref-text">2026. I asked an AI “What kind of person am I?”, and it became a practice in viewing myself objectively｜せぷ. note（ノート）. Retrieved August 12, 2026 from <a href="https://note.com/natty_walrus3755/n/n192c83162218">https://note.com/natty_walrus3755/n/n192c83162218</a></span></li>
+          <li id="ref-61"><span class="ref-num">[61]</span><span class="ref-text">Ntaganda | International Criminal Court. Retrieved August 14, 2026 from <a href="https://www.icc-cpi.int/drc/ntaganda">https://www.icc-cpi.int/drc/ntaganda</a></span></li>
+        </ol>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BACK TO SITE ===== -->
+<section class="section participate">
+  <div class="container two-col">
+    <h2>More from CogStandards</h2>
+    <div>
+      <p>Read more about our work on <a href="../index.html#memory">AI and human memory</a>.</p>
+      <a class="btn btn-large" href="../index.html#publications">All publications</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>&copy; <span id="year">2026</span> The Centre for Standards in AI and Human Cognition (CogStandards)</p>
+    <p><a href="https://www.linkedin.com/in/drjuliashaw/">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
