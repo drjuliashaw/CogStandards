@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security: same rule as the homepage. Only files from this site may load. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ===== SEO for this project ===== -->
+  <title>Moral Fingerprints | CogStandards</title>
+  <meta name="description" content="Moral Fingerprints is a CogStandards research programme on the moral personalisation of AI: measuring individual moral values, giving AI systems a model of them, and setting standards for how that model is used.">
+  <link rel="canonical" href="https://aihumancognition.org/publications/moral-fingerprints.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CogStandards">
+  <meta property="og:title" content="Moral Fingerprints">
+  <meta property="og:description" content="A research programme on the moral personalisation of AI, led by Dr Julia Shaw and Bryce Goodman.">
+  <meta property="og:url" content="https://aihumancognition.org/publications/moral-fingerprints.html">
+  <meta property="og:image" content="https://aihumancognition.org/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ===== HEADER / NAVIGATION (same as the homepage) ===== -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="logo" href="../index.html" aria-label="CogStandards home">
+      <img class="logo-mark" src="../logo.png" alt="CogStandards: The Centre for Standards in AI and Human Cognition">
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#areas">Areas of work</a></li>
+        <li><a href="../index.html#publications">Publications</a></li>
+        <li><a href="../index.html#people">People</a></li>
+        <li><a class="btn" href="../index.html#participate">Participate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="hero paper-hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="crumb"><a href="../index.html#publications">← Publications</a></p>
+      <h1>Moral Fingerprints</h1>
+    </div>
+    <div class="hero-text">
+      <p class="paper-kind"><span class="label">Research programme</span><time datetime="2026">2026, in progress</time></p>
+      <p class="lede">Standards for the moral personalisation of AI.</p>
+      <p class="hero-links"><span class="label">Sections:</span>
+        <a href="#idea">The idea</a>
+        <a href="#why">Why standards</a>
+        <a href="#questions">The questions</a>
+        <a href="#team">Team</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE IDEA ===== -->
+<section class="section" id="idea">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>The idea</h2>
+    </div>
+    <div class="prose">
+      <p class="abstract-text">People carry measurable patterns of moral values. The choices they make in ethical dilemmas, and the values they report, form a signature that is stable enough to be recognised. This programme calls that signature a moral fingerprint.</p>
+      <p>AI systems can measure a moral fingerprint, store it, and act on it. An assistant or agent that carries a model of its user's values could make choices the user would recognise as their own, and could flag the choices the user would find hardest. For people who make consequential decisions with AI assistance, and for anyone who deploys agents on their own behalf, that is a form of alignment worth having.</p>
+      <p>The same model is a new attack surface. A system that knows how a person weighs competing values also knows how to frame an argument that person will accept. Moral personalisation could make harmful manipulation easier, and harder to notice.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY STANDARDS ===== -->
+<section class="section" id="why">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>Why standards</h2>
+    </div>
+    <div class="prose">
+      <p>Moral personalisation is a likely direction for AI products. Whether it arrives as a feature or as an exploit depends on choices made before the evidence is in: how values are measured, who holds the model, when a system may act on it, and when it must say so.</p>
+      <p>CogStandards is running this programme to put evidence behind those choices. The aim is a set of standards for the development of AI moral personas: what a faithful model of a person's values looks like, how it should be tested, and where the line sits between assisting a person's moral judgement and steering it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE QUESTIONS ===== -->
+<section class="section" id="questions">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>The questions</h2>
+    </div>
+    <div class="prose">
+      <p>The programme is a series of linked studies with human participants. Each answers one question, and each builds on the last.</p>
+      <ol class="cards step-cards">
+        <li class="card">
+          <span class="card-num">01</span>
+          <h4>Can it be measured?</h4>
+          <p>Whether a person's moral values can be captured reliably, and whether ethical dilemmas reveal more than questionnaires do.</p>
+        </li>
+        <li class="card">
+          <span class="card-num">02</span>
+          <h4>Can an AI carry it?</h4>
+          <p>Whether a fingerprint can be turned into instructions that make an AI system choose as the person would.</p>
+        </li>
+        <li class="card">
+          <span class="card-num">03</span>
+          <h4>Does it persuade?</h4>
+          <p>Whether a system that knows a person's values is more persuasive, and whether people notice when it is used against them.</p>
+        </li>
+        <li class="card">
+          <span class="card-num">04</span>
+          <h4>Does it predict?</h4>
+          <p>Whether a fingerprint predicts a person's decisions in realistic settings, from legal judgements to policy choices.</p>
+        </li>
+        <li class="card">
+          <span class="card-num">05</span>
+          <h4>Does it last?</h4>
+          <p>Whether the fingerprint, and the AI's model of it, stay accurate over weeks and months.</p>
+        </li>
+      </ol>
+      <p class="note">Findings will be published here as each study completes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section class="section" id="team">
+  <div class="container">
+    <h2>Team</h2>
+    <ul class="people">
+      <li class="person">
+        <h3>Dr Julia Shaw</h3>
+        <p class="role">CogStandards</p>
+        <p>Criminal psychologist and memory scientist. Visiting Researcher at the King's Institute for Artificial Intelligence and a visitor at the Centre for the Governance of AI.</p>
+      </li>
+      <li class="person">
+        <h3>Bryce Goodman</h3>
+        <p class="role">University of Oxford</p>
+        <p>Clarendon Scholar at the University of Oxford. AI strategist and philosopher working on the governance of AI in high-stakes settings.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== GET INVOLVED ===== -->
+<section class="section participate">
+  <div class="container two-col">
+    <h2>Get involved</h2>
+    <div>
+      <p>The team welcomes researchers, AI developers and funders who want to collaborate on the programme or review draft standards.</p>
+      <a class="btn btn-large" href="https://www.linkedin.com/in/drjuliashaw/">Get in touch on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>&copy; <span id="year">2026</span> The Centre for Standards in AI and Human Cognition (CogStandards)</p>
+    <p><a href="https://www.linkedin.com/in/drjuliashaw/">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
