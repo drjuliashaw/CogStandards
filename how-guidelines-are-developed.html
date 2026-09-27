@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security: same rule as the homepage. Only files from this site may load. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ===== SEO for this page ===== -->
+  <title>How Guidelines Are Developed | CogGuide</title>
+  <meta name="description" content="How CogGuide develops evidence-based, expert-reviewed best practice guidelines for AI developers: scoping, an independent expert panel, systematic evidence review, GRADE-rated recommendations, external review and publication.">
+  <link rel="canonical" href="https://cognitiveguidelines.org/how-guidelines-are-developed.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CogGuide">
+  <meta property="og:title" content="How Guidelines Are Developed">
+  <meta property="og:description" content="The six-step process behind every CogGuide guideline, modelled on how NICE develops clinical guidelines.">
+  <meta property="og:url" content="https://cognitiveguidelines.org/how-guidelines-are-developed.html">
+  <meta property="og:image" content="https://cognitiveguidelines.org/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ===== HEADER / NAVIGATION (same as the homepage) ===== -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="logo" href="index.html" aria-label="CogGuide home">
+      <img class="logo-mark" src="logo.png" alt="CogGuide: The Centre for Cognitive Guidelines in AI">
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#method">How it works</a></li>
+        <li><a href="index.html#mental-functions">Cognitive capacities</a></li>
+        <li><a href="index.html#people">People</a></li>
+        <li><a class="btn" href="index.html#participate">Participate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="hero paper-hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="crumb"><a href="index.html#method">&larr; How it works</a></p>
+      <h1>How guidelines are developed</h1>
+    </div>
+    <div class="hero-text">
+      <p class="paper-kind"><span class="label">Process</span></p>
+      <p class="lede">Every CogGuide guideline follows the same six steps, modelled on how NICE develops clinical guidelines. Only invited experts decide the recommendations.</p>
+      <p class="hero-links"><span class="label">Steps:</span>
+        <a href="#scoping">Scoping</a>
+        <a href="#panel">Expert panel</a>
+        <a href="#evidence">Evidence review</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="#review">External review</a>
+        <a href="#publication">Publication</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT A GUIDELINE IS ===== -->
+<section class="section" id="overview">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>What a guideline is</h2>
+    </div>
+    <div class="prose">
+      <p class="abstract-text">CogGuide produces evidence-based, expert-reviewed best practice guidelines for frontier AI developers on how their products should protect users' cognition, including memory, belief and judgement.</p>
+      <p>The term follows the Institute of Medicine's definition of clinical practice guidelines: recommendations informed by a systematic review of evidence and an assessment of benefits and harms.</p>
+      <p>The guidelines are not formal standards. Mature guidelines can later be put forward to a recognised standards body.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEP 1: SCOPING ===== -->
+<section class="section" id="scoping">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">01</span>
+      <h2>Scoping</h2>
+    </div>
+    <div class="prose">
+      <p>CogGuide picks topics where there is evidence of harm and a clear AI behaviour developers can change. A short scope document then sets out:</p>
+      <ul class="steps">
+        <li>the context and users covered</li>
+        <li>the AI behaviours in question</li>
+        <li>three to six review questions</li>
+        <li>what is out of scope</li>
+      </ul>
+      <ol class="cards step-cards">
+        <li class="card">
+          <span class="card-num">Example review question</span>
+          <p>When a user discloses a crime they witnessed or experienced, which AI questioning behaviours increase the risk of memory distortion?</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEP 2: EXPERT PANEL ===== -->
+<section class="section" id="panel">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">02</span>
+      <h2>Expert panel</h2>
+    </div>
+    <div class="prose">
+      <p>Each topic has its own panel of 8 to 12 experts and an independent chair. Membership criteria are published in advance.</p>
+      <p>Members qualify through peer-reviewed research on the topic, or senior professional practice in it, such as police interviewing or forensic psychology. Panels mix disciplines, for example memory science, law and AI safety.</p>
+      <p>All members publish declarations of interest. A member with a financial tie to an affected developer can join the discussion but does not rate the recommendations it would affect.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEP 3: EVIDENCE REVIEW ===== -->
+<section class="section" id="evidence">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">03</span>
+      <h2>Evidence review</h2>
+    </div>
+    <div class="prose">
+      <p>The CogGuide research team runs a systematic review for each review question, using a protocol registered in advance on the Open Science Framework.</p>
+      <p>Reviews cover AI-specific studies and transferable human research, such as the evidence base on interviewing witnesses. The panel receives each review as evidence tables with a plain summary.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEP 4: RECOMMENDATIONS ===== -->
+<section class="section" id="recommendations">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">04</span>
+      <h2>Recommendations</h2>
+    </div>
+    <div class="prose">
+      <p>The panel discusses the evidence and drafts recommendations. Each recommendation states:</p>
+      <ol class="cards step-cards">
+        <li class="card">
+          <h4>The behaviour</h4>
+          <p>What the model should do, or avoid doing.</p>
+        </li>
+        <li class="card">
+          <h4>The evidence</h4>
+          <p>The research the recommendation rests on.</p>
+        </li>
+        <li class="card">
+          <h4>The certainty</h4>
+          <p>How strong that evidence is, rated with GRADE as high, moderate, low or very low.</p>
+        </li>
+        <li class="card">
+          <h4>The test</h4>
+          <p>A check developers can run to see whether their system follows the recommendation.</p>
+        </li>
+      </ol>
+      <p>Where agreement is unclear, members rate the wording anonymously from 1 to 9. A recommendation is agreed when at least 75 percent rate it 7 or above. Unresolved disagreements are recorded in the published guideline.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEP 5: EXTERNAL REVIEW ===== -->
+<section class="section" id="review">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">05</span>
+      <h2>External review</h2>
+    </div>
+    <div class="prose">
+      <p>The draft goes to independent expert reviewers who are not on the panel, with four weeks to comment.</p>
+      <p>Frontier developers are invited to comment on technical feasibility only, and have no say in the recommendations. The panel answers every comment in a published response table and revises the draft where needed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEP 6: PUBLICATION ===== -->
+<section class="section" id="publication">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">06</span>
+      <h2>Publication and updating</h2>
+    </div>
+    <div class="prose">
+      <p>CogGuide publishes each guideline alongside the evidence reviews, panel membership, declarations of interest and the comment response table.</p>
+      <p>Each guideline is checked every two years, or sooner if major new evidence appears. Mature guidelines can later be put forward to a recognised body, for example as a BSI Publicly Available Specification.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOURCES ===== -->
+<section class="section" id="sources">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>Sources</h2>
+    </div>
+    <div class="prose">
+      <ol class="footnotes">
+        <li>Institute of Medicine (2011). <a href="https://nap.nationalacademies.org/catalog/13058/clinical-practice-guidelines-we-can-trust">Clinical Practice Guidelines We Can Trust</a>. Washington, DC: The National Academies Press.</li>
+        <li>National Institute for Health and Care Excellence. <a href="https://www.nice.org.uk/process/pmg20">Developing NICE guidelines: the manual (PMG20)</a>.</li>
+        <li>GRADE Working Group. <a href="https://www.gradeworkinggroup.org/">Grading of Recommendations, Assessment, Development and Evaluation</a>.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GET INVOLVED ===== -->
+<section class="section participate">
+  <div class="container two-col">
+    <h2>Get involved</h2>
+    <div>
+      <p>CogGuide welcomes researchers and practitioners who want to join a guideline panel or review a draft guideline.</p>
+      <a class="btn btn-large" href="https://www.linkedin.com/in/drjuliashaw/">Get in touch on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>&copy; <span id="year">2026</span> The Centre for Cognitive Guidelines in AI (CogGuide)</p>
+    <p><a href="https://www.linkedin.com/in/drjuliashaw/">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

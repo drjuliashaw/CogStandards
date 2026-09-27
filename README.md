@@ -1,4 +1,6 @@
-# CogStandards website
+# CogGuide website
+
+The Centre for Cognitive Guidelines in AI (CogGuide), cognitiveguidelines.org.
 
 A plain static site: no build step, no framework. Open `index.html` in a browser to see it.
 
@@ -6,7 +8,10 @@ A plain static site: no build step, no framework. Open `index.html` in a browser
 
 | File | What it is |
 |---|---|
-| `index.html` | All the page content. Edit text directly here. Each section is marked with a `<!-- ===== NAME ===== -->` comment. |
+| `index.html` | All the homepage content. Edit text directly here. Each section is marked with a `<!-- ===== NAME ===== -->` comment. |
+| `how-guidelines-are-developed.html` | The full six-step guideline development process, linked from the homepage's "How guidelines are developed" section. |
+| `publications/` | Project and paper pages, including `mental-functions.html` (the framework) and `mental-functions-map.html` (its interactive visualisation). |
+| `mental-functions.js`, `mental-functions.css` | The interactive mental functions diagram. Any page can show it with `<div data-mental-functions></div>` plus these two files. Wording lives in the `DATA` block at the top of the `.js` file. |
 | `style.css` | Colours, fonts, spacing. Colours and fonts are variables at the top of the file. |
 | `logo.png` | The black wordmark in the header (transparent background). Replace the file to change it. |
 | `favicon.png`, `apple-touch-icon.png` | The browser-tab and phone home-screen icon: the "C" from the wordmark, white on black. |
@@ -26,7 +31,7 @@ A plain static site: no build step, no framework. Open `index.html` in a browser
 
 ## Before going live (search engines)
 
-Search `index.html`, `robots.txt` and `sitemap.xml` for `cogstandards.org` and replace it with your real domain. Then:
+All pages, `robots.txt` and `sitemap.xml` already use `cognitiveguidelines.org`. If the domain changes, search every file for it and replace it. Then:
 
 1. After publishing, submit the sitemap at https://search.google.com/search-console.
 

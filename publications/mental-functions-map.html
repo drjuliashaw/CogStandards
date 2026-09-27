@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security: same rule as the homepage. Only files from this site may load. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ===== SEO for this page ===== -->
+  <title>How the ICF Categorises the Mind | CogGuide</title>
+  <meta name="description" content="An interactive map of the WHO ICF mental functions: 7 global and 11 specific functions, with definitions and subcategories.">
+  <link rel="canonical" href="https://cognitiveguidelines.org/publications/mental-functions-map.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CogGuide">
+  <meta property="og:title" content="How the ICF Categorises the Mind">
+  <meta property="og:description" content="An interactive map of the WHO ICF mental functions: 7 global and 11 specific functions, with definitions and subcategories.">
+  <meta property="og:url" content="https://cognitiveguidelines.org/publications/mental-functions-map.html">
+  <meta property="og:image" content="https://cognitiveguidelines.org/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../mental-functions.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ===== HEADER / NAVIGATION (same as the homepage) ===== -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="logo" href="../index.html" aria-label="CogGuide home">
+      <img class="logo-mark" src="../logo.png" alt="CogGuide: The Centre for Cognitive Guidelines in AI">
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#method">How it works</a></li>
+        <li><a href="../index.html#mental-functions">Cognitive capacities</a></li>
+        <li><a href="../index.html#people">People</a></li>
+        <li><a class="btn" href="../index.html#participate">Participate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="hero paper-hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="crumb"><a href="mental-functions.html#categories">&larr; Mental Functions and AI</a></p>
+      <h1>How the ICF categorises the mind</h1>
+    </div>
+    <div class="hero-text">
+      <p class="paper-kind"><span class="label">Visualisation</span></p>
+      <p class="lede">The ICF lists the agreed “mental functions” as either global or specific.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VISUALISATION ===== -->
+<section class="section viz-stage" id="map">
+  <div class="container">
+    <!-- The interactive diagram. It needs ../mental-functions.css and ../mental-functions.js. -->
+    <div data-mental-functions></div>
+  </div>
+</section>
+
+<!-- ===== BACK TO THE FRAMEWORK ===== -->
+<section class="section">
+  <div class="container two-col">
+    <h2>Read the framework</h2>
+    <div>
+      <p>The full framework explains why CogGuide focuses on mental functions, how changes can be measured, and early evidence on how conversational AI may affect them.</p>
+      <a class="btn btn-large" href="mental-functions.html">Mental Functions and AI</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GET INVOLVED ===== -->
+<section class="section participate">
+  <div class="container two-col">
+    <h2>Get involved</h2>
+    <div>
+      <p>CogGuide welcomes researchers and practitioners who want to join a guideline panel or review a draft guideline.</p>
+      <a class="btn btn-large" href="https://www.linkedin.com/in/drjuliashaw/">Get in touch on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>&copy; <span id="year">2026</span> The Centre for Cognitive Guidelines in AI (CogGuide)</p>
+    <p><a href="https://www.linkedin.com/in/drjuliashaw/">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+<script src="../mental-functions.js"></script>
+</body>
+</html>

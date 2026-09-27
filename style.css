@@ -1,5 +1,5 @@
 /* =====================================================================
-   CogStandards stylesheet
+   CogGuide stylesheet
    Change colours and fonts here; everything else follows.
    ===================================================================== */
 
@@ -218,9 +218,10 @@ nav a:not(.btn):hover { color: var(--accent-dark); }
 .paper-kind .label { color: var(--accent-dark); }
 .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 28px; }
 .hero-actions .btn-large { margin-top: 0; }
-p.hero-actions a, p.crumb a { text-decoration: none; }
+p.hero-actions a, p.crumb a, p.more a { text-decoration: none; }
 .btn-plain { font-family: var(--sans); font-size: 15px; font-weight: 500; color: var(--heading); }
 .btn-plain:hover { color: var(--accent-dark); }
+.more { margin-top: 8px; }
 
 /* Section headings stay in view while you read the long sections */
 .sec-head { position: sticky; top: 96px; align-self: start; }
@@ -266,3 +267,28 @@ li:target { background: #e8f3f9; border-radius: 4px; }
   .step-cards { grid-template-columns: 1fr; }
   .abstract-text { font-size: 18px; }
 }
+
+/* =====================================================================
+   Framework pages (publications/mental-functions*.html)
+   ===================================================================== */
+.table-wrap { overflow-x: auto; margin: 8px 0 36px; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 16px; line-height: 1.45; border-top: 1px solid var(--ink); }
+.data-table th { font-family: var(--sans); font-size: 13.5px; font-weight: 600; text-align: left; color: var(--muted); padding: 10px 14px 10px 0; border-bottom: 1px solid var(--rule); vertical-align: bottom; }
+.data-table td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.data-table td:first-child { font-family: var(--sans); font-weight: 600; font-size: 15px; }
+.data-table.wide { min-width: 640px; }
+.data-table.wide td { font-size: 15px; }
+.data-table td.num { font-family: var(--sans); white-space: nowrap; }
+.lead-in { font-family: var(--sans); font-weight: 600; }
+.fn { margin: 0 0 8px; }
+.fn h4 { font-family: var(--sans); font-size: 19px; font-weight: 600; margin: 36px 0 6px; }
+.fn .fn-def { margin-bottom: 12px; }
+.viz-callout { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; background: var(--card); border-radius: 12px; padding: 18px 22px; margin: 4px 0 32px; }
+.viz-callout p { margin: 0; font-family: var(--sans); font-size: 15.5px; }
+p.viz-callout-text a { text-decoration: none; }
+.viz-stage { padding-top: 8px; }
+.mfv { margin-top: 8px; }
+.two-col > * { min-width: 0; }
+.home-viz { margin-top: 40px; }
+.person h3 a { text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 4px; }
+.person h3 a:hover { color: var(--accent-dark); text-decoration-color: var(--accent); }
