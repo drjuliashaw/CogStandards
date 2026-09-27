@@ -12,20 +12,7 @@
   'use strict';
 
   var DATA = {
-    intro: 'The ICF lists the agreed “mental functions” as either global or specific.',
-    global: {
-      name: 'Global mental functions',
-      description: 'Broad states and dispositions.',
-      items: [
-        { name: 'Consciousness', label: 'Consciousness', definition: 'Awareness and alertness, including how clear and continuous the waking state is.' },
-        { name: 'Orientation', label: 'Orientation', definition: 'Knowing where one stands in relation to oneself, other people, time and one’s surroundings.' },
-        { name: 'Intellect', label: 'Intellect', definition: 'Understanding and integrating all the other cognitive functions, as this develops across the life span.' },
-        { name: 'Psychosocial', label: 'Psychosocial', definition: 'Integrating mental functions into the interpersonal skills needed for reciprocal, meaningful social interaction.' },
-        { name: 'Temperament and personality', label: 'Temperament', definition: 'A person’s disposition to react to situations in particular ways, and the traits that set them apart from others.' },
-        { name: 'Energy and drive', label: 'Energy & drive', definition: 'The physiological and psychological mechanisms that push a person to pursue needs and goals persistently.' },
-        { name: 'Sleep', label: 'Sleep', definition: 'Periodic, reversible disengagement from one’s surroundings, with characteristic physiological changes.' }
-      ]
-    },
+    intro: 'The ICF defines 11 specific mental functions.',
     specific: {
       name: 'Specific mental functions',
       description: 'Separate capacities, each of which can be assessed on its own. These each have subcategories that help to explain what, precisely, is meant by these capacities.',
@@ -87,7 +74,7 @@
 
   var SVGNS = 'http://www.w3.org/2000/svg';
   var W = 900, H = 720, CX = 450, CY = 360;
-  var R = { core: 92, g0: 100, g1: 172, s0: 180, s1: 262, u0: 268, u1: 284, label: 304 };
+  var R = { core: 150, s0: 160, s1: 262, u0: 268, u1: 284 };
   var TAU = Math.PI * 2;
   var uid = 0;
 
@@ -121,7 +108,7 @@
 
     var stage = el('div', { 'class': 'mfv-stage' }, host);
     var svg = s('svg', { viewBox: (CX - R.u1 - 10) + ' ' + (CY - R.u1 - 10) + ' ' + (2 * R.u1 + 20) + ' ' + (2 * R.u1 + 20), 'class': 'mfv-svg', role: 'group',
-      'aria-label': 'Interactive diagram of the ICF mental functions: 7 global functions in the inner ring and 11 specific functions in the outer ring' }, stage);
+      'aria-label': 'Interactive diagram of the 11 specific mental functions in the ICF' }, stage);
     var defs = s('defs', null, svg);
     var tip = el('div', { 'class': 'mfv-tip', role: 'status' }, stage);
 
@@ -136,21 +123,6 @@
     var coreT1 = s('text', { x: CX, y: CY - 6, 'class': 'mfv-core-title' }, core);
     var coreT2 = s('text', { x: CX, y: CY + 18, 'class': 'mfv-core-sub' }, core);
 
-    // Global ring
-    var gItems = DATA.global.items, gn = gItems.length, gGap = 0.018;
-    gItems.forEach(function (it, i) {
-      var a0 = i * TAU / gn + gGap, a1 = (i + 1) * TAU / gn - gGap, mid = (a0 + a1) / 2;
-      var g = s('g', { 'class': 'mfv-node mfv-global', tabindex: '0', role: 'button',
-        'aria-label': it.name + ', global mental function' }, svg);
-      s('path', { d: sector(R.g0, R.g1, a0, a1), 'class': 'mfv-seg' }, g);
-      var pid = id + '-g' + i, flip = mid > Math.PI / 2 && mid < Math.PI * 1.5;
-      s('path', { id: pid, d: arcLine((R.g0 + R.g1) / 2, a0, a1, flip), fill: 'none', stroke: 'none' }, defs);
-      var t = s('text', { 'class': 'mfv-ring-label', dy: '0.36em' }, g);
-      var tp = s('textPath', { href: '#' + pid, startOffset: '50%' }, t);
-      tp.textContent = it.label;
-      nodes.push({ group: 'global', index: i, item: it, el: g, subs: [] });
-    });
-
     // Specific ring
     var sItems = DATA.specific.items, sn = sItems.length, sGap = 0.012;
     sItems.forEach(function (it, i) {
@@ -159,7 +131,7 @@
         'aria-label': it.name + ', specific mental function, ' + (it.subs.length ? it.subs.length + ' subcategories' : 'no subcategories') }, svg);
       s('path', { d: sector(R.s0, R.s1, a0, a1), 'class': 'mfv-seg' }, g);
 
-      // name inside the segment, curved like the global ring (lines stack towards the centre)
+      // name inside the segment, curved along the ring (lines stack towards the centre)
       var sflip = mid > Math.PI / 2 && mid < Math.PI * 1.5, slh = 15, sn2 = it.ring.length;
       it.ring.forEach(function (line, li) {
         var off = (li - (sn2 - 1) / 2) * slh, rr = (R.s0 + R.s1) / 2 + (sflip ? off : -off);
@@ -178,10 +150,10 @@
         it.subs.forEach(function (sub, j) {
           var b0 = a0 + j * span + sg, b1 = a0 + (j + 1) * span - sg;
           var p = s('path', { d: sector(R.u0, R.u1, b0, b1), 'class': 'mfv-sub' }, svg);
-          p.addEventListener('mouseenter', function (e) { showTip(sub[0], e); hover(i + gn, j); });
+          p.addEventListener('mouseenter', function (e) { showTip(sub[0], e); hover(i, j); });
           p.addEventListener('mousemove', function (e) { moveTip(e); });
           p.addEventListener('mouseleave', function () { hideTip(); hover(null); });
-          p.addEventListener('click', function () { select(i + gn, j); });
+          p.addEventListener('click', function () { select(i, j); });
           subs.push(p);
         });
       } else {
@@ -232,7 +204,7 @@
       } else if (state.group) {
         setCore(DATA[state.group].name.replace(' mental functions', ''), DATA[state.group].items.length + ' functions');
       } else {
-        setCore('Mental functions', '7 global · 11 specific');
+        setCore('Mental functions', '11 functions');
       }
     }
 
@@ -305,10 +277,9 @@
       h('p', 'mfv-eyebrow', 'ICF mental functions', panel);
       h('h3', 'mfv-title', 'Mental functions', panel);
       h('p', 'mfv-text', DATA.intro, panel);
-      groupCard('global', panel);
       groupCard('specific', panel);
       if (host.classList.contains('mfv-compact')) {
-        ['global', 'specific'].forEach(function (g) {
+        ['specific'].forEach(function (g) {
           h('h4', 'mfv-subhead', DATA[g].name, panel);
           var ul = h('ul', 'mfv-list mfv-list-compact', null, panel);
           nodes.forEach(function (n, idx) {
