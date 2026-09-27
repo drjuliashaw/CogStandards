@@ -27,10 +27,10 @@
           ['Long-term memory', 'Lasting storage, covering both autobiographical memory of past events and semantic memory of language and facts.'],
           ['Retrieval and processing of memory', 'Recalling information stored in long-term memory and bringing it into awareness.'],
           ['Working memory', 'Comparing and processing information drawn from short-term and long-term memory.']] },
-        { name: 'Psychomotor functions', ring: ['Psychomotor', 'functions'], lines: ['Psychomotor', 'functions'], definition: 'Mental control over the speed and quality of bodily responses.', subs: [
+        { name: 'Psychomotor skills', ring: ['Psychomotor', 'skills'], lines: ['Psychomotor', 'skills'], definition: 'Mental control over the speed and quality of bodily responses.', subs: [
           ['Psychomotor control', 'Regulating the speed of behaviour and response time, which has both motor and psychological components.'],
           ['Quality of psychomotor functions', 'Producing nonverbal behaviour in the right sequence and form, such as hand–eye coordination or gait.']] },
-        { name: 'Emotional functions', ring: ['Emotional', 'functions'], lines: ['Emotional', 'functions'], definition: 'The feeling and affective side of mental processes.', subs: [
+        { name: 'Emotion', ring: ['Emotion'], lines: ['Emotion'], definition: 'The feeling and affective side of mental processes.', subs: [
           ['Appropriateness of emotion', 'Feelings that fit the situation.'],
           ['Regulation of emotion', 'Controlling how emotions are experienced and shown.'],
           ['Range of emotion', 'Experiencing the full spectrum of feelings, such as love, hate, anxiety, sorrow, joy, fear and anger.']] },
@@ -46,7 +46,7 @@
           ['Form of thought', 'Organising thinking so that it is coherent and logical.'],
           ['Content of thought', 'The ideas present in thinking, and what is being conceptualised, including beliefs.'],
           ['Control of thought', 'Voluntary control over thinking, which the person recognises as their own.']] },
-        { name: 'Higher-level cognitive functions', ring: ['Higher-level', 'cognitive', 'functions'], lines: ['Higher-level', 'cognitive functions'], definition: 'Goal-directed functions that depend mainly on the frontal lobes, often called executive functions.', subs: [
+        { name: 'Higher-level cognitions', ring: ['Higher-level', 'cognitions'], lines: ['Higher-level', 'cognitions'], definition: 'Goal-directed functions that depend mainly on the frontal lobes, often called executive functions.', subs: [
           ['Abstraction', 'Forming general ideas out of specific objects or instances.'],
           ['Organisation and planning', 'Coordinating parts into a whole and working out a method of proceeding.'],
           ['Time management', 'Putting events in chronological order and allocating time to activities.'],
@@ -54,7 +54,7 @@
           ['Insight', 'Awareness and understanding of oneself and one’s own behaviour.'],
           ['Judgement', 'Discriminating between and evaluating options, as in forming an opinion.'],
           ['Problem-solving', 'Identifying, analysing and integrating conflicting information into a solution.']] },
-        { name: 'Mental functions of language', ring: ['Mental', 'functions of', 'language'], lines: ['Mental functions', 'of language'], definition: 'Recognising and using signs, symbols and other parts of a language.', subs: [
+        { name: 'Language', ring: ['Language'], lines: ['Language'], definition: 'Recognising and using signs, symbols and other parts of a language.', subs: [
           ['Reception of language', 'Decoding spoken, written, signed or gestured messages to obtain their meaning.'],
           ['Expression of language', 'Producing meaningful spoken, written, signed or gestured messages.'],
           ['Integrative language functions', 'Organising meaning, grammar and ideas to produce a message.']] },
