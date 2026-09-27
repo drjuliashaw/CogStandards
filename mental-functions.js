@@ -74,7 +74,7 @@
 
   var SVGNS = 'http://www.w3.org/2000/svg';
   var W = 900, H = 720, CX = 450, CY = 360;
-  var R = { core: 150, s0: 160, s1: 262, u0: 268, u1: 284 };
+  var R = { core: 96, s0: 106, s1: 250, u0: 256, u1: 272 };
   var TAU = Math.PI * 2;
   var uid = 0;
 
@@ -132,9 +132,9 @@
       s('path', { d: sector(R.s0, R.s1, a0, a1), 'class': 'mfv-seg' }, g);
 
       // name inside the segment, curved along the ring (lines stack towards the centre)
-      var sflip = mid > Math.PI / 2 && mid < Math.PI * 1.5, slh = 15, sn2 = it.ring.length;
+      var sflip = mid > Math.PI / 2 && mid < Math.PI * 1.5, slh = 17, sn2 = it.ring.length;
       it.ring.forEach(function (line, li) {
-        var off = (li - (sn2 - 1) / 2) * slh, rr = (R.s0 + R.s1) / 2 + (sflip ? off : -off);
+        var off = (li - (sn2 - 1) / 2) * slh, rr = (R.s0 + R.s1) / 2 + 14 + (sflip ? off : -off);
         var spid = id + '-s' + i + '-' + li;
         s('path', { id: spid, d: arcLine(rr, a0, a1, sflip), fill: 'none', stroke: 'none' }, defs);
         var st = s('text', { 'class': 'mfv-seg-label', dy: '0.36em' }, g);
@@ -202,9 +202,9 @@
       if (ref) {
         setCore(ref.item.name, '');
       } else if (state.group) {
-        setCore(DATA[state.group].name.replace(' mental functions', ''), DATA[state.group].items.length + ' functions');
+        setCore(DATA[state.group].name.replace(' mental functions', ''), '');
       } else {
-        setCore('Mental functions', '11 functions');
+        setCore('Mental functions', '');
       }
     }
 
