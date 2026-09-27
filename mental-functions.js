@@ -19,8 +19,8 @@
       items: [
         { name: 'Consciousness', label: 'Consciousness', definition: 'Awareness and alertness, including how clear and continuous the waking state is.' },
         { name: 'Orientation', label: 'Orientation', definition: 'Knowing where one stands in relation to oneself, other people, time and one’s surroundings.' },
-        { name: 'Intellectual functions', label: 'Intellectual', definition: 'Understanding and integrating all the other cognitive functions, as this develops across the life span.' },
-        { name: 'Global psychosocial functions', label: 'Psychosocial', definition: 'Integrating mental functions into the interpersonal skills needed for reciprocal, meaningful social interaction.' },
+        { name: 'Intellect', label: 'Intellect', definition: 'Understanding and integrating all the other cognitive functions, as this develops across the life span.' },
+        { name: 'Psychosocial', label: 'Psychosocial', definition: 'Integrating mental functions into the interpersonal skills needed for reciprocal, meaningful social interaction.' },
         { name: 'Temperament and personality', label: 'Temperament', definition: 'A person’s disposition to react to situations in particular ways, and the traits that set them apart from others.' },
         { name: 'Energy and drive', label: 'Energy & drive', definition: 'The physiological and psychological mechanisms that push a person to pursue needs and goals persistently.' },
         { name: 'Sleep', label: 'Sleep', definition: 'Periodic, reversible disengagement from one’s surroundings, with characteristic physiological changes.' }
