@@ -159,11 +159,11 @@
         'aria-label': it.name + ', specific mental function, ' + (it.subs.length ? it.subs.length + ' subcategories' : 'no subcategories') }, svg);
       s('path', { d: sector(R.s0, R.s1, a0, a1), 'class': 'mfv-seg' }, g);
 
-      // count badge inside the segment
+      // number badge inside the segment (1 = Attention, then clockwise)
       var c = pt((R.s0 + R.s1) / 2, mid);
       s('circle', { cx: f(c[0]), cy: f(c[1]), r: 15, 'class': 'mfv-count-bg' }, g);
       var ct = s('text', { x: f(c[0]), y: f(c[1]), 'class': 'mfv-count' }, g);
-      ct.textContent = it.subs.length || '–';
+      ct.textContent = String(i + 1);
 
       // subcategory arcs
       var subs = [];
@@ -324,7 +324,7 @@
           });
         });
       } else {
-        h('p', 'mfv-hint', 'Select any segment to see its definition. The outer ticks are subcategories; the number shows how many each specific function has.', panel);
+        h('p', 'mfv-hint', 'Select any segment to see its definition. The specific functions are numbered clockwise from Attention; the outer ticks are subcategories.', panel);
       }
       h('p', 'mfv-source', DATA.source, panel);
     }
