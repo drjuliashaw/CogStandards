@@ -42,9 +42,9 @@
 
 .mfv-ring-label { font-size: 12px; font-weight: 600; fill: var(--mfv-sand-ink); text-anchor: middle; pointer-events: none; transition: opacity .25s; }
 .mfv-outer-label { font-size: 16px; font-weight: 500; fill: var(--mfv-ink); dominant-baseline: middle; transition: opacity .25s, fill .2s; }
-.mfv-seg-label { font-size: 12.5px; font-weight: 600; fill: #0b5f55; text-anchor: middle; pointer-events: none; transition: fill .2s; }
+.mfv-seg-label { font-size: 14px; font-weight: 600; fill: #0b5f55; text-anchor: middle; pointer-events: none; transition: fill .2s; }
 .mfv-specific.is-on .mfv-seg-label, .mfv-specific:focus-visible .mfv-seg-label { fill: #fff; }
-.mfv-compact .mfv-seg-label { font-size: 13.5px; }
+.mfv-compact .mfv-seg-label { font-size: 14px; }
 .mfv-count-bg { fill: #fff; opacity: .85; pointer-events: none; transition: opacity .25s; }
 .mfv-count { font-size: 12.5px; font-weight: 600; fill: var(--mfv-teal); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 
