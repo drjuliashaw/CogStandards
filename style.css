@@ -326,3 +326,4 @@ p.viz-callout-text a { text-decoration: none; }
 a.pill { text-decoration: none; } a.pill:hover { background: #cfe8e3; }
 @media (max-width: 900px) { .gp-layout { grid-template-columns: 1fr; } .gw { max-width: 440px; margin: 0 auto; } }
 @media (max-width: 640px) { .gp-head { display: none; } .gp-row { grid-template-columns: 1fr; gap: 8px; } }
+.hero-text .pills { margin: 0 0 22px; }
