@@ -327,3 +327,9 @@ a.pill { text-decoration: none; } a.pill:hover { background: #cfe8e3; }
 @media (max-width: 900px) { .gp-layout { grid-template-columns: 1fr; } .gw { max-width: 440px; margin: 0 auto; } }
 @media (max-width: 640px) { .gp-head { display: none; } .gp-row { grid-template-columns: 1fr; gap: 8px; } }
 .hero-text .pills { margin: 0 0 22px; }
+/* ---------- Pipeline tags, example guideline ---------- */
+.hero-note { font-size: 16.5px; color: var(--muted); margin-top: 16px; }
+.gp-tag { display: inline-block; vertical-align: 2px; margin-left: 6px; font-size: 11px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--rule); border-radius: 999px; padding: 1px 8px; }
+.gp-tag-pri { color: #0b5f55; border-color: #7cc3b7; background: #dcefeb; }
+.ex-fail { border-left: 4px solid #c9723c; } .ex-pass { border-left: 4px solid #008F7E; }
+.ex-why { font-family: var(--sans); font-size: 14px; color: var(--muted); margin-top: 8px; }
