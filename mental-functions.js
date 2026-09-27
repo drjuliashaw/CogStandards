@@ -30,36 +30,36 @@
       name: 'Specific mental functions',
       description: 'Separate capacities, each of which can be assessed on its own. These each have subcategories that help to explain what, precisely, is meant by these capacities.',
       items: [
-        { name: 'Attention', lines: ['Attention'], definition: 'Focusing on something outside or inside oneself for as long as needed.', subs: [
+        { name: 'Attention', ring: ['Attention'], lines: ['Attention'], definition: 'Focusing on something outside or inside oneself for as long as needed.', subs: [
           ['Sustaining attention', 'Keeping concentration for as long as a task requires.'],
           ['Shifting attention', 'Moving concentration from one thing to another.'],
           ['Dividing attention', 'Focusing on two or more things at once.'],
           ['Sharing attention', 'Two or more people focusing on the same thing.']] },
-        { name: 'Memory', lines: ['Memory'], definition: 'Registering and storing information, and retrieving it when needed.', subs: [
+        { name: 'Memory', ring: ['Memory'], lines: ['Memory'], definition: 'Registering and storing information, and retrieving it when needed.', subs: [
           ['Short-term memory', 'A temporary store lasting around 30 seconds, from which information is lost unless it is consolidated into long-term memory.'],
           ['Long-term memory', 'Lasting storage, covering both autobiographical memory of past events and semantic memory of language and facts.'],
           ['Retrieval and processing of memory', 'Recalling information stored in long-term memory and bringing it into awareness.'],
           ['Working memory', 'Comparing and processing information drawn from short-term and long-term memory.']] },
-        { name: 'Psychomotor functions', lines: ['Psychomotor', 'functions'], definition: 'Mental control over the speed and quality of bodily responses.', subs: [
+        { name: 'Psychomotor functions', ring: ['Psychomotor', 'functions'], lines: ['Psychomotor', 'functions'], definition: 'Mental control over the speed and quality of bodily responses.', subs: [
           ['Psychomotor control', 'Regulating the speed of behaviour and response time, which has both motor and psychological components.'],
           ['Quality of psychomotor functions', 'Producing nonverbal behaviour in the right sequence and form, such as hand–eye coordination or gait.']] },
-        { name: 'Emotional functions', lines: ['Emotional', 'functions'], definition: 'The feeling and affective side of mental processes.', subs: [
+        { name: 'Emotional functions', ring: ['Emotional', 'functions'], lines: ['Emotional', 'functions'], definition: 'The feeling and affective side of mental processes.', subs: [
           ['Appropriateness of emotion', 'Feelings that fit the situation.'],
           ['Regulation of emotion', 'Controlling how emotions are experienced and shown.'],
           ['Range of emotion', 'Experiencing the full spectrum of feelings, such as love, hate, anxiety, sorrow, joy, fear and anger.']] },
-        { name: 'Perception', lines: ['Perception'], definition: 'Recognising and interpreting what the senses take in.', subs: [
+        { name: 'Perception', ring: ['Perception'], lines: ['Perception'], definition: 'Recognising and interpreting what the senses take in.', subs: [
           ['Auditory perception', 'Telling apart sounds, tones and pitches.'],
           ['Visual perception', 'Telling apart shape, size, colour and other visual features.'],
           ['Olfactory perception', 'Telling apart smells.'],
           ['Gustatory perception', 'Telling apart tastes such as sweet, sour, salty and bitter.'],
           ['Tactile perception', 'Telling apart textures by touch.'],
           ['Visuospatial perception', 'Judging by sight where objects are, relative to each other and to oneself.']] },
-        { name: 'Thought', lines: ['Thought'], definition: 'Forming and working with ideas.', subs: [
+        { name: 'Thought', ring: ['Thought'], lines: ['Thought'], definition: 'Forming and working with ideas.', subs: [
           ['Pace of thought', 'The speed of thinking.'],
           ['Form of thought', 'Organising thinking so that it is coherent and logical.'],
           ['Content of thought', 'The ideas present in thinking, and what is being conceptualised, including beliefs.'],
           ['Control of thought', 'Voluntary control over thinking, which the person recognises as their own.']] },
-        { name: 'Higher-level cognitive functions', lines: ['Higher-level', 'cognitive functions'], definition: 'Goal-directed functions that depend mainly on the frontal lobes, often called executive functions.', subs: [
+        { name: 'Higher-level cognitive functions', ring: ['Higher-level', 'cognitive', 'functions'], lines: ['Higher-level', 'cognitive functions'], definition: 'Goal-directed functions that depend mainly on the frontal lobes, often called executive functions.', subs: [
           ['Abstraction', 'Forming general ideas out of specific objects or instances.'],
           ['Organisation and planning', 'Coordinating parts into a whole and working out a method of proceeding.'],
           ['Time management', 'Putting events in chronological order and allocating time to activities.'],
@@ -67,15 +67,15 @@
           ['Insight', 'Awareness and understanding of oneself and one’s own behaviour.'],
           ['Judgement', 'Discriminating between and evaluating options, as in forming an opinion.'],
           ['Problem-solving', 'Identifying, analysing and integrating conflicting information into a solution.']] },
-        { name: 'Mental functions of language', lines: ['Mental functions', 'of language'], definition: 'Recognising and using signs, symbols and other parts of a language.', subs: [
+        { name: 'Mental functions of language', ring: ['Mental', 'functions of', 'language'], lines: ['Mental functions', 'of language'], definition: 'Recognising and using signs, symbols and other parts of a language.', subs: [
           ['Reception of language', 'Decoding spoken, written, signed or gestured messages to obtain their meaning.'],
           ['Expression of language', 'Producing meaningful spoken, written, signed or gestured messages.'],
           ['Integrative language functions', 'Organising meaning, grammar and ideas to produce a message.']] },
-        { name: 'Calculation', lines: ['Calculation'], definition: 'Estimating, working out and manipulating mathematical symbols and processes.', subs: [
+        { name: 'Calculation', ring: ['Calculation'], lines: ['Calculation'], definition: 'Estimating, working out and manipulating mathematical symbols and processes.', subs: [
           ['Simple calculation', 'Computing with numbers, such as adding, subtracting, multiplying and dividing.'],
           ['Complex calculation', 'Turning word problems or formulas into arithmetic, and other complex work with numbers.']] },
-        { name: 'Sequencing complex movements', lines: ['Sequencing complex', 'movements'], definition: 'Ordering and coordinating complex, purposeful movements.', subs: [] },
-        { name: 'Experience of self and time', lines: ['Experience of', 'self and time'], definition: 'Awareness of one’s identity, one’s body, one’s place in reality and the passage of time.', subs: [
+        { name: 'Sequencing complex movements', ring: ['Sequencing', 'complex', 'movements'], lines: ['Sequencing complex', 'movements'], definition: 'Ordering and coordinating complex, purposeful movements.', subs: [] },
+        { name: 'Experience of self and time', ring: ['Experience', 'of self', 'and time'], lines: ['Experience of', 'self and time'], definition: 'Awareness of one’s identity, one’s body, one’s place in reality and the passage of time.', subs: [
           ['Experience of self', 'Awareness of one’s own identity and of one’s position in the reality of one’s surroundings.'],
           ['Body image', 'Representation and awareness of one’s own body.'],
           ['Experience of time', 'The subjective experience of how long things take and of time passing.']] }
@@ -120,7 +120,7 @@
     host.innerHTML = '';
 
     var stage = el('div', { 'class': 'mfv-stage' }, host);
-    var svg = s('svg', { viewBox: '0 0 ' + W + ' ' + H, 'class': 'mfv-svg', role: 'group',
+    var svg = s('svg', { viewBox: (CX - R.u1 - 10) + ' ' + (CY - R.u1 - 10) + ' ' + (2 * R.u1 + 20) + ' ' + (2 * R.u1 + 20), 'class': 'mfv-svg', role: 'group',
       'aria-label': 'Interactive diagram of the ICF mental functions: 7 global functions in the inner ring and 11 specific functions in the outer ring' }, stage);
     var defs = s('defs', null, svg);
     var tip = el('div', { 'class': 'mfv-tip', role: 'status' }, stage);
@@ -159,11 +159,16 @@
         'aria-label': it.name + ', specific mental function, ' + (it.subs.length ? it.subs.length + ' subcategories' : 'no subcategories') }, svg);
       s('path', { d: sector(R.s0, R.s1, a0, a1), 'class': 'mfv-seg' }, g);
 
-      // number badge inside the segment (1 = Attention, then clockwise)
-      var c = pt((R.s0 + R.s1) / 2, mid);
-      s('circle', { cx: f(c[0]), cy: f(c[1]), r: 15, 'class': 'mfv-count-bg' }, g);
-      var ct = s('text', { x: f(c[0]), y: f(c[1]), 'class': 'mfv-count' }, g);
-      ct.textContent = String(i + 1);
+      // name inside the segment, curved like the global ring (lines stack towards the centre)
+      var sflip = mid > Math.PI / 2 && mid < Math.PI * 1.5, slh = 15, sn2 = it.ring.length;
+      it.ring.forEach(function (line, li) {
+        var off = (li - (sn2 - 1) / 2) * slh, rr = (R.s0 + R.s1) / 2 + (sflip ? off : -off);
+        var spid = id + '-s' + i + '-' + li;
+        s('path', { id: spid, d: arcLine(rr, a0, a1, sflip), fill: 'none', stroke: 'none' }, defs);
+        var st = s('text', { 'class': 'mfv-seg-label', dy: '0.36em' }, g);
+        var stp = s('textPath', { href: '#' + spid, startOffset: '50%' }, st);
+        stp.textContent = line;
+      });
 
       // subcategory arcs
       var subs = [];
@@ -183,16 +188,6 @@
         s('path', { d: sector(R.u0, R.u1, a0, a1), 'class': 'mfv-sub mfv-sub-empty' }, svg);
       }
 
-      // outer label
-      var lp = pt(R.label, mid), sin = Math.sin(mid), cos = Math.cos(mid);
-      var anchor = sin > 0.2 ? 'start' : (sin < -0.2 ? 'end' : 'middle');
-      var lines = it.lines, lh = 19;
-      var y0 = lp[1] - (lines.length - 1) * lh / 2 + (cos < -0.5 ? 12 : (cos > 0.5 ? -8 : 0));
-      var lt = s('text', { x: f(lp[0]), y: f(y0), 'class': 'mfv-outer-label', 'text-anchor': anchor }, g);
-      lines.forEach(function (line, li) {
-        var ts = s('tspan', { x: f(lp[0]), dy: li ? lh : 0 }, lt);
-        ts.textContent = line;
-      });
       nodes.push({ group: 'specific', index: i, item: it, el: g, subs: subs });
     });
 
@@ -324,7 +319,7 @@
           });
         });
       } else {
-        h('p', 'mfv-hint', 'Select any segment to see its definition. The specific functions are numbered clockwise from Attention; the outer ticks are subcategories.', panel);
+        h('p', 'mfv-hint', 'Select any segment to see its definition. The outer ticks are subcategories.', panel);
       }
       h('p', 'mfv-source', DATA.source, panel);
     }
@@ -387,8 +382,7 @@
     }
 
     var compact = null;
-    var FULL = '0 0 ' + W + ' ' + H;
-    var m = R.u1 + 10, CROP = (CX - m) + ' ' + (CY - m) + ' ' + (2 * m) + ' ' + (2 * m);
+    var m = R.u1 + 10, CROP = (CX - m) + ' ' + (CY - m) + ' ' + (2 * m) + ' ' + (2 * m), FULL = CROP;
     function layout() {
       var w = host.clientWidth;
       host.classList.toggle('mfv-stacked', w < 820);
