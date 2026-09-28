@@ -295,7 +295,7 @@ p.viz-callout-text a { text-decoration: none; }
 .avatar { display: block; width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; background: var(--card); box-shadow: 0 0 0 1px var(--rule); }
 .avatar-initials { display: flex; align-items: center; justify-content: center; font-family: var(--sans); font-size: 20px; font-weight: 600; color: var(--heading); }
 /* Homepage hero gradient */
-.hero:not(.paper-hero) { background: linear-gradient(0deg, #418f80 0%, #53998d 3%, #70aba0 8%, #99c3bb 15%, #a4c9c3 20%, #b3d2cc 30%, #c9e0da 45%, #dfebe9 60%, #edf4f2 72%, var(--bg) 88%); }
+.hero:not(.paper-hero) { background: linear-gradient(180deg, #418f80 0%, #53998d 3%, #70aba0 8%, #99c3bb 15%, #a4c9c3 20%, #b3d2cc 30%, #c9e0da 45%, #dfebe9 60%, #edf4f2 72%, var(--bg) 88%); }
 .pub-main a { display: inline; }
 .pills { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 10px 0 0; font-family: var(--sans); }
 .pills-label { font-size: 13px; color: var(--muted); margin-right: 2px; }
