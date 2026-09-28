@@ -333,3 +333,6 @@ a.pill { text-decoration: none; } a.pill:hover { background: #cfe8e3; }
 .gp-tag-pri { color: #0b5f55; border-color: #7cc3b7; background: #dcefeb; }
 .ex-fail { border-left: 4px solid #c9723c; } .ex-pass { border-left: 4px solid #008F7E; }
 .ex-why { font-family: var(--sans); font-size: 14px; color: var(--muted); margin-top: 8px; }
+/* ---------- Research projects page ---------- */
+.pub-desc { font-size: 16px; line-height: 1.5; margin: 8px 0 0; color: var(--ink); }
+.pub-people { font-family: var(--sans); font-size: 13.5px; color: var(--muted); margin: 6px 0 0; }
