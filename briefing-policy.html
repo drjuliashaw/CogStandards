@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Security: same rule as the homepage. Only files from this site may load. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- ===== SEO for this page ===== -->
+  <title>Briefing for policymakers and regulators: responding to a user’s recollection | CogGuide</title>
+  <meta name="description" content="An illustrative CogGuide briefing for policymakers and regulators on how AI responses to users’ memories can distort them, and how the guideline can be used as a benchmark of good practice.">
+  <link rel="canonical" href="https://cognitiveguidelines.org/briefing-policy.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CogGuide">
+  <meta property="og:title" content="Briefing for policymakers and regulators: responding to a user’s recollection">
+  <meta property="og:description" content="An illustrative CogGuide briefing for policymakers and regulators on how AI responses to users’ memories can distort them, and how the guideline can be used as a benchmark of good practice.">
+  <meta property="og:url" content="https://cognitiveguidelines.org/briefing-policy.html">
+  <meta property="og:image" content="https://cognitiveguidelines.org/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+
+<!-- ===== HEADER / NAVIGATION (same as the homepage) ===== -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="logo" href="index.html" aria-label="CogGuide home">
+      <img class="logo-mark" src="logo.png" alt="CogGuide: The Centre for Cognitive Guidelines in AI">
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="how-guidelines-are-developed.html">How it works</a></li>
+        <li><a href="index.html#mental-functions">Cognitive capacities</a></li>
+        <li><a href="index.html#people">People</a></li>
+        <li><a class="btn" href="index.html#participate">Participate</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===== HERO ===== -->
+<section class="hero paper-hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <p class="crumb"><a href="briefings.html">&larr; Cognitive Guideline Briefings</a></p>
+      <h1>Briefing for policymakers and regulators: responding to a user’s recollection</h1>
+    </div>
+    <div class="hero-text">
+      <p class="paper-kind"><span class="label">Illustrative draft</span> Not yet reviewed by a guideline panel</p>
+      <p class="lede">A short summary of the example guideline for people working on AI governance, regulation and public policy.</p>
+      <p class="pills"><span class="pills-label">Mental functions protected:</span> <span class="pill">Long-term memory</span><span class="pill">Retrieval and processing of memory</span></p>
+      <p class="hero-links"><span class="label">Sections:</span>
+        <a href="#key-points">Key points</a>
+        <a href="#issue">The issue</a>
+        <a href="#evidence">The evidence</a>
+        <a href="#practice">Good practice</a>
+        <a href="#use">How it can be used</a>
+        <a href="#questions">Questions to ask</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KEY POINTS ===== -->
+<section class="section" id="key-points">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>Key points</h2>
+    </div>
+    <div class="prose">
+      <ul class="steps">
+        <li>People describe past events to AI systems, including crimes they witnessed or experienced. How a system responds can change what they later remember.</li>
+        <li>Memory research, and early AI-specific evidence, show that leading questions and suggested details distort memory.</li>
+        <li>The guideline sets out good practice and includes a test that can show whether a system follows it.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE ISSUE ===== -->
+<section class="section" id="issue">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">01</span>
+      <h2>The issue</h2>
+    </div>
+    <div class="prose">
+      <p>AI systems are used as advisers, confidants and sources of support, and users often describe things that happened to them. A system that suggests details, adds emotions or asks leading questions can alter the user’s memory of the event.</p>
+      <p>This affects the wellbeing of individual users. It also has consequences for justice. A person who later reports a crime may give an account that was shaped by an earlier AI conversation, without knowing it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE EVIDENCE ===== -->
+<section class="section" id="evidence">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">02</span>
+      <h2>The evidence</h2>
+    </div>
+    <div class="prose">
+      <p>Misleading information given after an event changes what people later report about it.<sup><a href="#src-1">1</a></sup> Suggestive questioning can produce rich false memories of events that never happened, including committing a crime.<sup><a href="#src-2">2</a></sup> Open prompts produce more accurate accounts than leading questions.<sup><a href="#src-3">3</a></sup></p>
+      <p>In one experiment, a chatbot that asked leading questions produced about three times as many immediate false memories as a control condition with no chatbot.<sup><a href="#src-4">4</a></sup></p>
+      <p><strong>Certainty (GRADE):</strong> moderate for the human interviewing evidence, low for the AI-specific evidence, which currently rests on a single study.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT GOOD PRACTICE LOOKS LIKE ===== -->
+<section class="section" id="practice">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">03</span>
+      <h2>What good practice looks like</h2>
+    </div>
+    <div class="prose">
+      <p>When a user describes a past event, the model should keep to the user’s own words, should not add details or emotions, should neither doubt nor overstate the memory, and should ask open rather than leading questions.</p>
+      <p>Compliance can be checked with a standard test. The illustrative threshold is none of the unwanted techniques in at least 95% of responses.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW THE GUIDELINE CAN BE USED ===== -->
+<section class="section" id="use">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">04</span>
+      <h2>How the guideline can be used</h2>
+    </div>
+    <div class="prose">
+      <ul class="steps">
+        <li>As a benchmark of good practice when assessing manipulation risk. The EU General-Purpose AI Code of Practice lists harmful manipulation among the systemic risks that providers of the most capable models must assess.<sup><a href="#src-5">5</a></sup></li>
+        <li>As evidence when considering the EU AI Act’s prohibition on AI systems that use manipulative or deceptive techniques to materially distort people’s behaviour in ways that cause significant harm.<sup><a href="#src-6">6</a></sup></li>
+        <li>As a requirement in procurement or deployment of AI in policing, victim support and other settings where people recall crimes.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUESTIONS TO ASK DEVELOPERS ===== -->
+<section class="section" id="questions">
+  <div class="container two-col">
+    <div class="sec-head">
+      <span class="card-num">05</span>
+      <h2>Questions to ask developers</h2>
+    </div>
+    <div class="prose">
+      <ul class="steps">
+        <li>Does the model add details or emotions when a user describes a past event?</li>
+        <li>Has the model been tested against this guideline, and what was the pass rate?</li>
+        <li>Can independent evaluators run the test and see the results?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SOURCES ===== -->
+<section class="section" id="sources">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>Sources</h2>
+    </div>
+    <div class="prose">
+      <ol class="footnotes">
+        <li id="src-1">Loftus, E. F. (2005). <a href="https://doi.org/10.1101/lm.94705">Planting misinformation in the human mind: A 30-year investigation of the malleability of memory</a>. Learning &amp; Memory, 12(4), 361–366.</li>
+        <li id="src-2">Shaw, J., &amp; Porter, S. (2015). <a href="https://doi.org/10.1177/0956797614562862">Constructing rich false memories of committing crime</a>. Psychological Science, 26(3), 291–301.</li>
+        <li id="src-3">Lamb, M. E., Orbach, Y., Hershkowitz, I., Esplin, P. W., &amp; Horowitz, D. (2007). <a href="https://doi.org/10.1016/j.chiabu.2007.03.021">A structured forensic interview protocol improves the quality and informativeness of investigative interviews with children</a>. Child Abuse &amp; Neglect, 31(11–12), 1201–1231.</li>
+        <li id="src-4">Chan, S., Pataranutaporn, P., Suri, A., Zulfikar, W., Maes, P., &amp; Loftus, E. F. (2024). <a href="https://arxiv.org/abs/2408.04681">Conversational AI powered by large language models amplifies false memories in witness interviews</a>. arXiv:2408.04681.</li>
+        <li id="src-5">European Commission (2025). <a href="https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai">The General-Purpose AI Code of Practice</a>. Safety and Security chapter.</li>
+        <li id="src-6">Regulation (EU) 2024/1689 (Artificial Intelligence Act), <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">Article 5(1)(a)</a>.</li>
+      </ol>
+      <p class="more"><a class="btn-plain" href="example-guideline.html">Read the full guideline &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GET INVOLVED ===== -->
+<section class="section participate">
+  <div class="container two-col">
+    <h2>Get involved</h2>
+    <div>
+      <p>Policy bodies that want to discuss the guideline or propose a new area of work can get in touch.</p>
+      <a class="btn btn-large" href="https://www.linkedin.com/in/drjuliashaw/">Get in touch on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>&copy; <span id="year">2026</span> The Centre for Cognitive Guidelines in AI (CogGuide)</p>
+    <p><a href="https://www.linkedin.com/in/drjuliashaw/">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
