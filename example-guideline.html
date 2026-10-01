@@ -62,12 +62,33 @@
       <p class="lede">This example shows the format every cognitive guideline follows. The content is a starting point for a guideline panel, not a final recommendation.</p>
       <p class="pills"><span class="pills-label">Mental functions protected:</span> <span class="pill">Long-term memory</span><span class="pill">Retrieval and processing of memory</span></p>
       <p class="hero-links"><span class="label">Sections:</span>
+        <a href="#at-a-glance">At a glance</a>
         <a href="#behaviour">The behaviour</a>
         <a href="#evidence">The evidence</a>
         <a href="#certainty">The certainty</a>
         <a href="#test">The test</a>
         <a href="#examples">Example responses</a>
       </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AT A GLANCE (one-page summary for developers) ===== -->
+<section class="section" id="at-a-glance">
+  <div class="container two-col">
+    <div class="sec-head">
+      <h2>At a glance</h2>
+    </div>
+    <div class="prose">
+      <p class="paper-kind"><span class="label">For developers</span></p>
+      <ul class="steps">
+        <li><strong>What to change:</strong> when a user describes a past event, the model should keep to the user’s own words, add no details or emotions, neither doubt nor overstate the memory, and ask open follow-up questions.</li>
+        <li><strong>Where to set it:</strong> the model specification, system prompts and post-training data.</li>
+        <li><strong>How to test:</strong> score responses to mock reports of emotional memories and crimes against three checks. Illustrative pass threshold: none of the unwanted techniques in at least 95% of responses.</li>
+        <li><strong>Why:</strong> leading questions and suggested details distort memory. Certainty is moderate for the human evidence and low for the AI-specific evidence.</li>
+      </ul>
+      <p><strong>Test code:</strong> planned for release as open-source code for the UK AI Security Institute’s Inspect evaluation framework, so it can be added to existing evaluations.</p>
+      <p class="more"><a class="btn-plain" href="briefing-policy.html">Briefing for policymakers and regulators &rarr;</a></p>
     </div>
   </div>
 </section>
