@@ -373,15 +373,14 @@ body.dark .hero-grid { grid-template-columns: 1fr; gap: 20px; justify-items: cen
 body.dark .hero .lede { margin: 0 auto; }
 body.dark .two-col { grid-template-columns: 1fr; gap: 20px; }
 @media (max-width: 720px) { body.dark { --gutter: 32px; } }
-/* ===== Homepage title, set like an inscription ===== */
-body.dark .hero { padding: 132px 0 112px; }
-body.dark .hero h1 { font-family: var(--serif); font-weight: 400; text-transform: uppercase; letter-spacing: .16em; font-size: clamp(28px, 5.2vw, 62px); line-height: 1.2; margin-right: -.16em; }
-body.dark .hero h1 span { display: block; }
-body.dark .hero h1::after { content: ""; display: block; width: 72px; height: 1px; background: rgba(255, 255, 255, .55); margin: 40px auto 0; }
-body.dark .hero .lede { font-style: italic; font-size: 22px; color: #d6d6d1; }
+/* ===== Homepage title: large version of the EII wordmark ===== */
+body.dark .hero { padding: 120px 0 104px; }
+body.dark .hero h1.lockup { display: flex; align-items: center; justify-content: center; font-family: var(--sans); letter-spacing: normal; line-height: 1; }
+body.dark .lk-abbr { font-size: clamp(60px, 10.5vw, 124px); font-weight: 700; letter-spacing: -0.03em; }
+body.dark .lk-name { font-size: clamp(21px, 3.8vw, 44px); font-weight: 500; line-height: 1.15; text-align: left; color: #e4e4df; margin-left: .55em; padding-left: .6em; border-left: 2px solid rgba(255, 255, 255, .35); }
+body.dark .hero .lede { font-style: italic; font-size: 22px; color: #d6d6d1; margin-top: 28px; }
 @media (max-width: 720px) {
-  body.dark .hero { padding: 80px 0 64px; }
-  body.dark .hero h1 { letter-spacing: .08em; margin-right: -.08em; font-size: 25px; }
+  body.dark .hero { padding: 72px 0 60px; }
   body.dark .hero .lede { font-size: 18px; }
 }
 body.dark #people .pills { margin-top: 28px; }
