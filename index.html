@@ -45,7 +45,7 @@
 
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
   <link rel="stylesheet" href="mental-functions.css?v=2">
 </head>
 
@@ -102,18 +102,23 @@
     <h2>What are epistemic risks?</h2>
     <div>
       <p class="er-def">Epistemic risks are threats to humanity’s shared ability to form accurate beliefs, reason well and keep a healthy information environment.</p>
-      <p>In 2026, a group of 30 researchers, including Yoshua Bengio and David Rand, reviewed the evidence on how AI creates these risks in <a href="https://papers.ssrn.com/abstract=6873005"><cite>AI Epistemic Risks: Emerging Mechanisms &amp; Evidence</cite></a>. The paper was one of the prompts for founding EII.</p>
       <div class="er" data-er>
-        <svg class="er-rings" viewBox="0 0 200 206" aria-hidden="true" focusable="false">
-          <circle class="er-ring" data-er-ring="persuasion" cx="100" cy="72" r="60"/>
-          <circle class="er-ring" data-er-ring="offloading" cx="66" cy="132" r="60"/>
-          <circle class="er-ring" data-er-ring="feedback" cx="134" cy="132" r="60"/>
-          <text class="er-ring-label" x="100" y="40">Persuasion</text>
-          <text class="er-ring-label" x="44" y="166">Offloading</text>
-          <text class="er-ring-label" x="156" y="166">Feedback</text>
-        </svg>
+        <div class="er-figure">
+          <svg class="er-rings" viewBox="-10 2 220 210" role="group" aria-label="The three categories of epistemic risk">
+            <g class="er-ring" data-er-ring="persuasion" role="button" tabindex="0" aria-label="Persuasion and manipulation">
+              <circle cx="100" cy="64" r="60"/><text x="100" y="64">Persuasion</text>
+            </g>
+            <g class="er-ring" data-er-ring="offloading" role="button" tabindex="0" aria-label="Cognitive offloading">
+              <circle cx="52" cy="147" r="60"/><text x="52" y="147">Offloading</text>
+            </g>
+            <g class="er-ring" data-er-ring="feedback" role="button" tabindex="0" aria-label="Feedback loops">
+              <circle cx="148" cy="147" r="60"/><text x="148" y="147">Feedback</text>
+            </g>
+          </svg>
+          <p class="er-hint">Select a circle to read about it.</p>
+        </div>
         <div class="er-body">
-          <p class="er-lead">The paper describes three ways AI can wear down how well people think: <button type="button" class="er-term" data-er-key="persuasion">persuasion and manipulation</button>, <button type="button" class="er-term" data-er-key="offloading">cognitive offloading</button> and <button type="button" class="er-term" data-er-key="feedback">feedback loops</button>. Its authors argue that the three can <button type="button" class="er-term" data-er-key="compound">compound one another</button>.</p>
+          <p class="er-lead">There are three broad categories of epistemic risks, and they can <button type="button" class="er-term" data-er-key="compound">compound one another</button>.</p>
           <dl class="er-notes" aria-live="polite">
             <div class="er-note" data-er-note="persuasion">
               <dt>Persuasion and manipulation</dt>
@@ -134,6 +139,7 @@
           </dl>
         </div>
       </div>
+      <p class="er-source">Source: <a href="https://papers.ssrn.com/abstract=6873005"><cite>AI Epistemic Risks: Emerging Mechanisms &amp; Evidence</cite></a></p>
     </div>
   </div>
 </section>
@@ -204,6 +210,6 @@
 
 <script src="script.js"></script>
 <script src="mental-functions.js?v=2"></script>
-<script src="risks.js?v=1"></script>
+<script src="risks.js?v=2"></script>
 </body>
 </html>
