@@ -45,7 +45,7 @@
 
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=9">
   <link rel="stylesheet" href="mental-functions.css?v=2">
 </head>
 
@@ -62,6 +62,7 @@
     <nav aria-label="Main">
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#epistemic-risks">Epistemic risks</a></li>
         <li><a href="#mental-functions">Cognitive capacities</a></li>
         <li><a href="#people">People</a></li>
         <li><a class="btn" href="#participate">Contact</a></li>
@@ -85,11 +86,53 @@
 <!-- ===== ABOUT ===== -->
 <section class="section" id="about">
   <div class="container two-col">
-    <h2>Who we are</h2>
     <div>
       <p>The AI Epistemic Impacts Initiative (EII) seeks to understand and communicate the impact of AI on the human mind.</p>
       <p>We think that for humanity to thrive in a future with advanced AI we need to protect our ability to reason and think for ourselves. This, we think, is a priority that AI developers and the AI safety community are paying insufficient attention to. The EII’s purpose is to change that.</p>
       <p>Through research, meetings, and public dissemination of important findings on epistemic risks and virtues we aim to strengthen our collective cognitive security.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EPISTEMIC RISKS =====
+     The interactive part needs risks.js (linked at the bottom of this page). Without it, all four notes simply show as a list. -->
+<section class="section" id="epistemic-risks">
+  <div class="container two-col">
+    <h2>What are epistemic risks?</h2>
+    <div>
+      <p class="er-def">Epistemic risks are threats to humanity’s shared ability to form accurate beliefs, reason well and keep a healthy information environment.</p>
+      <p>In 2026, a group of 30 researchers, including Yoshua Bengio and David Rand, reviewed the evidence on how AI creates these risks in <a href="https://papers.ssrn.com/abstract=6873005"><cite>AI Epistemic Risks: Emerging Mechanisms &amp; Evidence</cite></a>. The paper was one of the prompts for founding EII.</p>
+      <div class="er" data-er>
+        <svg class="er-rings" viewBox="0 0 200 206" aria-hidden="true" focusable="false">
+          <circle class="er-ring" data-er-ring="persuasion" cx="100" cy="72" r="60"/>
+          <circle class="er-ring" data-er-ring="offloading" cx="66" cy="132" r="60"/>
+          <circle class="er-ring" data-er-ring="feedback" cx="134" cy="132" r="60"/>
+          <text class="er-ring-label" x="100" y="40">Persuasion</text>
+          <text class="er-ring-label" x="44" y="166">Offloading</text>
+          <text class="er-ring-label" x="156" y="166">Feedback</text>
+        </svg>
+        <div class="er-body">
+          <p class="er-lead">The paper describes three ways AI can wear down how well people think: <button type="button" class="er-term" data-er-key="persuasion">persuasion and manipulation</button>, <button type="button" class="er-term" data-er-key="offloading">cognitive offloading</button> and <button type="button" class="er-term" data-er-key="feedback">feedback loops</button>. Its authors argue that the three can <button type="button" class="er-term" data-er-key="compound">compound one another</button>.</p>
+          <dl class="er-notes" aria-live="polite">
+            <div class="er-note" data-er-note="persuasion">
+              <dt>Persuasion and manipulation</dt>
+              <dd>AI can be used on purpose to manipulate people for political or commercial ends, or to push them towards crime or radicalisation. It can also mislead when nobody intends it to, for example when a sycophantic model tells users what they want to hear.</dd>
+            </div>
+            <div class="er-note" data-er-note="offloading">
+              <dt>Cognitive offloading</dt>
+              <dd>People can now hand whole tasks of thinking over to AI. The authors argue this differs in kind from earlier technologies, and that skills people stop practising may decline.</dd>
+            </div>
+            <div class="er-note" data-er-note="feedback">
+              <dt>Feedback loops</dt>
+              <dd>People learn from AI, and AI learns from what people and other AI systems produce. These loops can narrow the range of ideas both sides draw on. The authors report signs that this is already making views more alike, and warn that it could also split people into separate camps.</dd>
+            </div>
+            <div class="er-note" data-er-note="compound">
+              <dt>How the three combine</dt>
+              <dd>Each mechanism can make the others worse. The authors also argue that AI could improve how people reason, but that this will not happen by default.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -160,5 +203,6 @@
 
 <script src="script.js"></script>
 <script src="mental-functions.js?v=2"></script>
+<script src="risks.js?v=1"></script>
 </body>
 </html>
