@@ -384,3 +384,5 @@ body.dark .hero .lede { font-style: italic; font-size: 22px; color: #d6d6d1; mar
   body.dark .hero .lede { font-size: 18px; }
 }
 body.dark #people .pills { margin-top: 28px; }
+body.dark .affil-name { font-size: 20px; font-weight: 600; margin: 0 0 8px; }
+body.dark .affil-name a { text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 4px; }
