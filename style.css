@@ -392,3 +392,29 @@ body.dark .banner-box { background: #000; padding: clamp(22px, 3.6vw, 48px) clam
 body.dark .tagline { text-align: center; padding-top: 44px; padding-bottom: 20px; }
 body.dark .tagline .lede { margin: 0; }
 @media (max-width: 720px) { body.dark .hero.hero-banner { padding: 40px 16px; } }
+/* ===== What are epistemic risks? (interactive terms + overlapping rings) ===== */
+body.dark .er-def { font-family: var(--serif); font-size: clamp(22px, 2.7vw, 29px); line-height: 1.35; color: #fff; margin: 0 0 22px; }
+body.dark #epistemic-risks cite { font-style: italic; }
+body.dark .er { display: grid; grid-template-columns: 200px 1fr; gap: 44px; align-items: start; margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--rule); }
+body.dark .er-rings { width: 100%; height: auto; overflow: visible; }
+body.dark .er-ring { fill: rgba(255, 255, 255, 0); stroke: #5a5a57; stroke-width: 1.2; transition: fill .35s, stroke .35s; }
+body.dark .er-js .er-ring { cursor: pointer; }
+body.dark .er-ring.is-on { fill: rgba(255, 255, 255, .17); stroke: #fff; }
+body.dark .er-ring-label { font-family: var(--sans); font-size: 11px; font-weight: 500; letter-spacing: .02em; fill: #b8b8b3; text-anchor: middle; pointer-events: none; }
+body.dark .er-lead { margin: 0 0 22px; }
+body.dark .er-term { font: inherit; color: #fff; background: none; border: 0; padding: 0 .12em; margin: 0 -.12em; cursor: pointer; text-decoration: underline dotted rgba(255, 255, 255, .55); text-underline-offset: 4px; text-decoration-thickness: 1px; transition: background .2s, color .2s; }
+body.dark .er-term:hover { text-decoration-style: solid; }
+body.dark .er-term:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+body.dark .er-term[aria-pressed="true"] { background: #fff; color: #000; text-decoration: none; }
+body.dark .er-notes { margin: 0; }
+body.dark .er-note { border-left: 2px solid #fff; padding: 2px 0 2px 18px; margin: 0 0 18px; }
+body.dark .er-note dt { font-family: var(--sans); font-size: 12.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #b8b8b3; margin: 0 0 6px; }
+body.dark .er-note dd { margin: 0; font-family: var(--serif); font-size: 17px; line-height: 1.5; color: #e4e4df; }
+body.dark .er-js .er-note { animation: er-in .35s ease; }
+body.dark .er-note[hidden] { display: none; }
+@keyframes er-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { body.dark .er-js .er-note { animation: none; } body.dark .er-ring { transition: none; } }
+@media (max-width: 720px) {
+  body.dark .er { grid-template-columns: 1fr; gap: 20px; }
+  body.dark .er-rings { max-width: 170px; margin: 0 auto; }
+}
