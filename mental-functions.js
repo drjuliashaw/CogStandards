@@ -334,17 +334,6 @@
           h('p', 'mfv-note', DATA.noSubs, panel);
         }
       }
-      var nav = h('div', 'mfv-nav', null, panel);
-      var same = nodes.filter(function (x) { return x.group === n.group; });
-      var pos = same.indexOf(n);
-      var prev = same[(pos - 1 + same.length) % same.length], next = same[(pos + 1) % same.length];
-      navBtn(nav, '← ' + prev.item.name, prev);
-      navBtn(nav, next.item.name + ' →', next);
-    }
-    function navBtn(parent, label, target) {
-      var b = el('button', { type: 'button', 'class': 'mfv-navbtn' }, parent);
-      b.textContent = label;
-      b.addEventListener('click', function () { select(nodes.indexOf(target), -1); });
     }
     function backButton() {
       var b = el('button', { type: 'button', 'class': 'mfv-back' }, panel);
