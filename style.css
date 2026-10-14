@@ -366,3 +366,10 @@ body.dark .mfv-tip { color: #000; }
 body.dark .mfv-card { background: #000; }
 body.dark .mfv-subrow:hover, body.dark .mfv-subrow.is-active, body.dark .mfv-list-btn:hover, body.dark .mfv-list-btn:focus-visible { background: #1c1c1c; }
 body.dark .mfv-subrow dd, body.dark .mfv-list-def { color: #d6d6d1; }
+/* ===== Homepage layout: centred title, headings above text, wider margins ===== */
+body.dark { --gutter: 48px; }
+body.dark .container { max-width: 920px; }
+body.dark .hero-grid { grid-template-columns: 1fr; gap: 20px; justify-items: center; text-align: center; }
+body.dark .hero .lede { margin: 0 auto; }
+body.dark .two-col { grid-template-columns: 1fr; gap: 20px; }
+@media (max-width: 720px) { body.dark { --gutter: 32px; } }
