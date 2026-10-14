@@ -373,3 +373,21 @@ body.dark .hero-grid { grid-template-columns: 1fr; gap: 20px; justify-items: cen
 body.dark .hero .lede { margin: 0 auto; }
 body.dark .two-col { grid-template-columns: 1fr; gap: 20px; }
 @media (max-width: 720px) { body.dark { --gutter: 32px; } }
+/* ===== Homepage background image ===== */
+body.dark { background: #000 url(neurons-bg.webp) center top / 100% auto repeat-y; }
+body.dark .hero:not(.paper-hero), body.dark .participate { background: transparent; }
+@media (max-width: 720px) {
+  body.dark { background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(neurons-bg.webp); background-size: 100% auto; background-repeat: repeat-y; }
+}
+/* ===== Homepage title, set like an inscription ===== */
+body.dark .hero { padding: 132px 0 112px; }
+body.dark .hero h1 { font-family: var(--serif); font-weight: 400; text-transform: uppercase; letter-spacing: .16em; font-size: clamp(28px, 5.2vw, 62px); line-height: 1.2; margin-right: -.16em; }
+body.dark .hero h1 span { display: block; }
+body.dark .hero h1::after { content: ""; display: block; width: 72px; height: 1px; background: rgba(255, 255, 255, .55); margin: 40px auto 0; }
+body.dark .hero .lede { font-style: italic; font-size: 22px; color: #d6d6d1; }
+@media (max-width: 720px) {
+  body.dark .hero { padding: 80px 0 64px; }
+  body.dark .hero h1 { letter-spacing: .08em; margin-right: -.08em; font-size: 25px; }
+  body.dark .hero .lede { font-size: 18px; }
+}
+body.dark #people .pills { margin-top: 28px; }
