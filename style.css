@@ -386,3 +386,9 @@ body.dark .hero .lede { font-style: italic; font-size: 22px; color: #d6d6d1; mar
 body.dark #people .pills { margin-top: 28px; }
 body.dark .affil-name { font-size: 20px; font-weight: 600; margin: 0 0 8px; }
 body.dark .affil-name a { text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 4px; }
+/* ===== Homepage banner: neuron image with the wordmark in a black panel ===== */
+body.dark .hero.hero-banner { display: flex; align-items: center; justify-content: center; min-height: clamp(280px, 40vw, 540px); padding: 48px 16px; background: #000 url(hero-neurons.webp) center / cover no-repeat; }
+body.dark .banner-box { background: #000; padding: clamp(22px, 3.6vw, 48px) clamp(26px, 5vw, 72px); }
+body.dark .tagline { text-align: center; padding-top: 44px; padding-bottom: 20px; }
+body.dark .tagline .lede { margin: 0; }
+@media (max-width: 720px) { body.dark .hero.hero-banner { padding: 40px 16px; } }
