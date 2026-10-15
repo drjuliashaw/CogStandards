@@ -346,15 +346,15 @@ a.pill { text-decoration: none; } a.pill:hover { background: #cfe8e3; }
 @media (max-width: 720px) { .logo-abbr { font-size: 22px; } }
 /* ===== Homepage dark theme (only applies to <body class="dark">) ===== */
 body.dark {
-  --bg: #000; --ink: #fff; --muted: #b8b8b3; --rule: #2b2b2b;
-  --heading: #fff; --card: #111; --accent: #fff; --accent-dark: #cfcfca;
+  --bg: #1f1f1f; --ink: #fff; --muted: #b8b8b3; --rule: #3a3a3a;
+  --heading: #fff; --card: #2a2a2a; --accent: #fff; --accent-dark: #cfcfca;
 }
-body.dark .site-header { background: rgba(0, 0, 0, 0.92); }
-body.dark .hero:not(.paper-hero) { background: #000; }
+body.dark .site-header { background: rgba(31, 31, 31, 0.94); }
+body.dark .hero:not(.paper-hero) { background: var(--bg); }
 body.dark .btn-large { background: #fff; color: #000; }
 body.dark .btn-large:hover { background: #cfcfca; color: #000; }
-body.dark .pill { color: #fff; background: #1c1c1c; box-shadow: 0 0 0 1px #3a3a3a; }
-body.dark .avatar { background: #111; }
+body.dark .pill { color: #fff; background: #2c2c2c; box-shadow: 0 0 0 1px #4a4a4a; }
+body.dark .avatar { background: #2a2a2a; }
 body.dark .mfv {
   --mfv-bg: #000; --mfv-ink: #fff; --mfv-muted: #b8b8b3; --mfv-rule: #2b2b2b; --mfv-card: #111;
   --mfv-teal-soft: #123f39; --mfv-teal-mid: #3f9c8e;
@@ -392,37 +392,25 @@ body.dark .banner-box { background: #000; padding: clamp(22px, 3.6vw, 48px) clam
 body.dark .tagline { text-align: center; padding-top: 44px; padding-bottom: 20px; }
 body.dark .tagline .lede { margin: 0; font-style: italic; }
 @media (max-width: 720px) { body.dark .hero.hero-banner { padding: 40px 16px; } }
-/* ===== What are epistemic risks? (three-circle diagram + notes) ===== */
+/* ===== What are epistemic risks? (static three-circle diagram + one subsection per category) ===== */
 body.dark .er-def { font-family: var(--serif); color: #fff; margin: 0 0 22px; }
 body.dark #epistemic-risks cite { font-style: italic; }
-body.dark .er { display: grid; grid-template-columns: 250px 1fr; gap: 44px; align-items: start; margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--rule); }
+body.dark .er-intro { display: grid; grid-template-columns: 250px 1fr; gap: 44px; align-items: center; margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--rule); }
 body.dark .er-rings { display: block; width: 100%; height: auto; overflow: visible; }
-body.dark .er-ring circle { fill: rgba(255, 255, 255, 0); stroke: #5a5a57; stroke-width: 1.2; transition: fill .35s, stroke .35s; }
-body.dark .er-ring text { font-family: var(--sans); font-size: 11.5px; font-weight: 500; letter-spacing: .02em; fill: #b8b8b3; text-anchor: middle; dominant-baseline: central; pointer-events: none; transition: fill .35s; }
-body.dark .er-js .er-ring { cursor: pointer; }
-body.dark .er-ring:focus { outline: none; }
-body.dark .er-ring:focus-visible circle { stroke: #fff; stroke-width: 2; }
-body.dark .er-ring:hover circle { stroke: #9a9a96; }
-body.dark .er-ring.is-on circle { fill: rgba(255, 255, 255, .17); stroke: #fff; }
-body.dark .er-ring.is-on text { fill: #fff; }
-body.dark .er-hint { display: none; font-family: var(--sans); font-size: 12.5px; color: var(--muted); text-align: center; margin: 10px 0 0; }
-body.dark .er-js .er-hint { display: block; }
-body.dark .er-lead { margin: 0 0 22px; }
-body.dark .er-term { font: inherit; color: #fff; background: none; border: 0; padding: 0 .12em; margin: 0 -.12em; cursor: pointer; text-decoration: underline dotted rgba(255, 255, 255, .55); text-underline-offset: 4px; text-decoration-thickness: 1px; transition: background .2s, color .2s; }
-body.dark .er-term:hover { text-decoration-style: solid; }
-body.dark .er-term:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
-body.dark .er-term[aria-pressed="true"] { background: #fff; color: #000; text-decoration: none; }
-body.dark .er-notes { margin: 0; }
-body.dark .er-note { border-left: 2px solid #fff; padding: 2px 0 2px 18px; margin: 0 0 18px; }
-body.dark .er-note dt { font-family: var(--sans); font-size: 12.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: #b8b8b3; margin: 0 0 6px; }
-body.dark .er-note dd { margin: 0; font-family: var(--serif); font-size: 17px; line-height: 1.5; color: #e4e4df; }
-body.dark .er-js .er-note { animation: er-in .35s ease; }
-body.dark .er-note[hidden] { display: none; }
+body.dark .er-rings circle { fill: rgba(255, 255, 255, .07); stroke: #9a9a96; stroke-width: 1.2; }
+body.dark .er-rings text { font-family: var(--sans); font-size: 11.5px; font-weight: 500; letter-spacing: .02em; fill: #e4e4df; text-anchor: middle; dominant-baseline: central; }
+body.dark .er-lead { margin: 0; font-size: clamp(20px, 2.3vw, 24px); line-height: 1.4; }
+body.dark .er-cats { margin-top: 40px; }
+body.dark .er-cat { padding: 26px 0 4px; border-top: 1px solid var(--rule); }
+body.dark .er-cat h3 { display: flex; align-items: center; gap: 12px; font-size: 20px; font-weight: 600; margin: 0 0 12px; }
+body.dark .er-glyph { flex: none; width: 26px; height: 26px; }
+body.dark .er-glyph circle { fill: none; stroke: #8a8a86; stroke-width: 1.1; }
+body.dark .er-glyph circle.on { fill: #fff; stroke: #fff; }
+body.dark .er-cat p { color: #e4e4df; }
 body.dark .er-source { font-family: var(--sans); font-size: 13.5px; color: var(--muted); margin: 28px 0 0; padding-top: 16px; border-top: 1px solid var(--rule); }
 body.dark .er-source a { color: #fff; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, .4); text-underline-offset: 3px; }
-@keyframes er-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
-@media (prefers-reduced-motion: reduce) { body.dark .er-js .er-note { animation: none; } body.dark .er-ring circle, body.dark .er-ring text { transition: none; } }
 @media (max-width: 720px) {
-  body.dark .er { grid-template-columns: 1fr; gap: 20px; }
+  body.dark .er-intro { grid-template-columns: 1fr; gap: 24px; }
   body.dark .er-figure { max-width: 250px; margin: 0 auto; }
+  body.dark .er-lead { text-align: center; }
 }
