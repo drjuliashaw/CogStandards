@@ -9,7 +9,7 @@
 
   <!-- ===== SEO: edit these when the site's address or description changes ===== -->
   <title>EII | AI Epistemic Impacts Initiative</title>
-  <meta name="description" content="The AI Epistemic Impacts Initiative (EII) is a group of researchers studying the epistemic risks and virtues of AI, to protect human minds from harm and help people make good decisions.">
+  <meta name="description" content="The AI Epistemic Impacts Initiative (EII) breaks down and shares important research on how AI affects the human mind, direct from the researchers and institutions doing the work.">
   <link rel="canonical" href="https://epistemicimpacts.org/">
   <meta name="robots" content="index, follow">
 
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="AI Epistemic Impacts Initiative">
   <meta property="og:title" content="EII | AI Epistemic Impacts Initiative">
-  <meta property="og:description" content="The AI Epistemic Impacts Initiative (EII) is a group of researchers studying the epistemic risks and virtues of AI, to protect human minds from harm and help people make good decisions.">
+  <meta property="og:description" content="The AI Epistemic Impacts Initiative (EII) breaks down and shares important research on how AI affects the human mind, direct from the researchers and institutions doing the work.">
   <meta property="og:url" content="https://epistemicimpacts.org/">
   <meta property="og:image" content="https://epistemicimpacts.org/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -26,15 +26,15 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ResearchOrganization",
+    "@type": "Organization",
     "name": "AI Epistemic Impacts Initiative",
     "alternateName": "EII",
     "url": "https://epistemicimpacts.org/",
-    "description": "A group of researchers working on the epistemic risks and virtues of AI: how to protect human minds from harm, and how AI can help people make good decisions.",
+    "description": "The AI Epistemic Impacts Initiative (EII) breaks down and shares important research on how AI affects the human mind, direct from the researchers and institutions doing the work.",
     "founder": {
       "@type": "Person",
       "name": "Julia Shaw",
-      "jobTitle": "Director"
+      "jobTitle": "Editor"
     },
     "knowsAbout": [
       "epistemic risk", "AI and human cognition", "false memory",
@@ -45,7 +45,7 @@
 
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=20">
+  <link rel="stylesheet" href="style.css?v=21">
 </head>
 
 <body class="dark">
@@ -61,9 +61,9 @@
     <nav aria-label="Main">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#epistemic-risks"><span class="nav-long">Epistemic risks</span><span class="nav-short">Risks</span></a></li>
         <li><a href="#updates">Updates</a></li>
-        <li><a href="#people">People</a></li>
+        <li><a href="#epistemic-risks"><span class="nav-long">Epistemic risks</span><span class="nav-short">Risks</span></a></li>
+        <li><a href="#editor">Editor</a></li>
         <li><a class="btn" href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -79,7 +79,7 @@
   </div>
 </section>
 <div class="container tagline">
-  <p class="lede">A group of researchers and thinkers who believe the impacts of AI on the human mind <mark class="hl">should be a priority</mark></p>
+  <p class="lede">Research on how AI affects the human mind, <mark class="hl">explained by the people doing it</mark></p>
 </div>
 
 <!-- ===== ABOUT ===== -->
@@ -87,10 +87,37 @@
   <div class="container two-col">
     <h2>About</h2>
     <div>
-      <p>The AI Epistemic Impacts Initiative (EII) seeks to understand and communicate the impact of AI on the human mind.</p>
-      <p>For humanity to thrive in a future with advanced AI, people need to <mark class="hl">protect their ability to reason and think for themselves</mark>. EII considers this a priority that AI developers and the AI safety community are paying insufficient attention to, and its purpose is to change that.</p>
-      <p>Through research, meetings, and public dissemination of important findings on epistemic risks and virtues, EII aims to strengthen collective cognitive security.</p>
+      <p>The AI Epistemic Impacts Initiative (EII) breaks down and shares important research on how AI affects the human mind, direct from the researchers and institutions doing the work.</p>
+      <p>For humanity to thrive in a future with advanced AI, people need to <mark class="hl">protect their ability to reason and think for themselves</mark>. AI developers and the AI safety community pay too little attention to this. EII exists to make the evidence easier to find and understand.</p>
+      <p>Each update features new work in the field, through interviews with the people behind it and plain-language summaries of what they found.</p>
     </div>
+  </div>
+</section>
+
+<!-- ===== UPDATES =====
+     To add an entry: copy the example <li> below (remove the comment marks around it), put it at the top of the list
+     and fill in the link, title, date and type. data-type must be one of: interview, news, publication.
+     The filter buttons and the "coming soon" note switch themselves on and off. -->
+<section class="section" id="updates">
+  <div class="container">
+    <h2>Updates</h2>
+    <p class="up-intro">Interviews with researchers and institutions, news, and new publications in the field.</p>
+    <div class="up-filters" role="group" aria-label="Show updates by type" hidden>
+      <button type="button" class="up-filter" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="up-filter" data-filter="interview" aria-pressed="false">Interviews</button>
+      <button type="button" class="up-filter" data-filter="news" aria-pressed="false">News</button>
+      <button type="button" class="up-filter" data-filter="publication" aria-pressed="false">Publications</button>
+    </div>
+    <ul class="up-list" data-updates>
+      <!-- Example entry:
+      <li class="up-item" data-type="interview">
+        <p class="up-meta"><span class="up-tag">Interview</span><time datetime="2026-11-01">1 November 2026</time></p>
+        <h3 class="up-title"><a href="LINK">Title of the interview</a></h3>
+        <p class="up-summary">One sentence on what it covers.</p>
+      </li>
+      -->
+    </ul>
+    <p class="up-empty">The first interviews and research summaries are coming soon.</p>
   </div>
 </section>
 
@@ -135,47 +162,18 @@
   </div>
 </section>
 
-<!-- ===== UPDATES =====
-     To add an entry: copy the example <li> below (remove the comment marks around it), put it at the top of the list
-     and fill in the link, title, date and type. data-type must be one of: interview, news, publication.
-     The filter buttons and the "coming soon" note switch themselves on and off. -->
-<section class="section" id="updates">
+<!-- ===== EDITOR ===== -->
+<section class="section" id="editor">
   <div class="container">
-    <h2>Updates</h2>
-    <p class="up-intro">Interviews with the researchers EII works with, news, and publications by members.</p>
-    <div class="up-filters" role="group" aria-label="Show updates by type" hidden>
-      <button type="button" class="up-filter" data-filter="all" aria-pressed="true">All</button>
-      <button type="button" class="up-filter" data-filter="interview" aria-pressed="false">Interviews</button>
-      <button type="button" class="up-filter" data-filter="news" aria-pressed="false">News</button>
-      <button type="button" class="up-filter" data-filter="publication" aria-pressed="false">Member publications</button>
-    </div>
-    <ul class="up-list" data-updates>
-      <!-- Example entry:
-      <li class="up-item" data-type="interview">
-        <p class="up-meta"><span class="up-tag">Interview</span><time datetime="2026-11-01">1 November 2026</time></p>
-        <h3 class="up-title"><a href="LINK">Title of the interview</a></h3>
-        <p class="up-summary">One sentence on what it covers.</p>
-      </li>
-      -->
-    </ul>
-    <p class="up-empty">The first interviews, news and member publications are coming soon.</p>
-  </div>
-</section>
-
-<!-- ===== PEOPLE =====
-     To add a person: copy one <li class="person"> block. -->
-<section class="section" id="people">
-  <div class="container">
-    <h2>People</h2>
+    <h2>Editor</h2>
     <ul class="people">
       <li class="person">
         <img class="avatar" src="people/julia-shaw.jpg" width="72" height="72" alt="">
         <h3><a href="https://www.kcl.ac.uk/people/julia-shaw">Julia Shaw</a></h3>
-        <p class="role">Director</p>
-        <p>Visiting Researcher at the King’s Institute for Artificial Intelligence and a visitor at the Centre for the Governance of AI.</p>
+        <p class="role">Founder and editor</p>
+        <p>Criminal psychologist and memory scientist. Visiting Researcher at the King’s Institute for Artificial Intelligence and a visitor at the Centre for the Governance of AI. Author of <cite>The Memory Illusion</cite>.</p>
       </li>
     </ul>
-    <p class="pills"><span class="pill">More affiliates announced soon</span></p>
   </div>
 </section>
 
@@ -184,7 +182,7 @@
   <div class="container">
     <div class="contact-box">
     <h2>Contact</h2>
-      <p>EII welcomes researchers who study how AI affects human thinking and would like to join the group or collaborate on a project.</p>
+      <p>Researchers and institutions with new work on how AI affects human thinking are invited to get in touch about an interview or feature.</p>
       <!-- Contact is via LinkedIn. Change the link below (it appears twice on this page). -->
       <a class="btn btn-large" href="https://www.linkedin.com/in/drjuliashaw/">Get in touch on LinkedIn</a>
     </div>
