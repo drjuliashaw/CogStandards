@@ -420,3 +420,92 @@ body.dark .er-source a { color: #fff; text-decoration: underline; text-decoratio
   body.dark .er-figure { max-width: 250px; margin: 0 auto; }
   body.dark .er-lead { text-align: center; }
 }
+/* ===== Refresh (Oct 2026): narrower text, colour from the banner photo, highlighter marks, boxes ===== */
+/* Colours sampled from the neuron photo's fluorescence channels. Each epistemic risk category has one. */
+body.dark { --c-persuasion: #ff4fb4; --c-offloading: #5be37a; --c-feedback: #6a95ff; --c-marker: #d4f55c; }
+
+/* Narrower reading column (about 70 characters per line); the header stays wide. */
+body.dark .container { max-width: 760px; }
+body.dark .site-header .container { max-width: 1080px; }
+
+/* Header: the logo hides while the banner (which shows the full logo) is on screen. */
+body.dark .site-header .logo { transition: opacity .3s; }
+body.dark .site-header.logo-off .logo { opacity: 0; pointer-events: none; }
+.nav-short { display: none; }
+@media (max-width: 720px) {
+  body.dark nav li:not(:last-child) { display: list-item; }
+  body.dark nav ul { gap: 13px; }
+  body.dark nav a { font-size: 13px; }
+  body.dark nav .btn { padding: 7px 11px; }
+  body.dark .logo-name { display: none; }
+  .nav-long { display: none; }
+  .nav-short { display: inline; }
+}
+@media (max-width: 380px) { body.dark nav ul { gap: 10px; } body.dark nav a { font-size: 12.5px; } }
+
+/* Smaller logo panel on the banner, so more of the photo shows. */
+body.dark .banner-box { padding: clamp(14px, 2.2vw, 28px) clamp(18px, 3vw, 40px); }
+body.dark .hero-banner .lk-abbr { font-size: clamp(42px, 6.6vw, 80px); }
+body.dark .hero-banner .lk-name { font-size: clamp(16px, 2.5vw, 29px); }
+
+/* Highlighter marks */
+body.dark mark.hl {
+  color: #000; font-style: inherit;
+  background: linear-gradient(100deg, rgba(212, 245, 92, 0) 0.4%, var(--c-marker) 2.2%, var(--c-marker) 97.5%, rgba(212, 245, 92, 0) 99.6%);
+  padding: .02em .28em .06em; margin: 0 -.08em; border-radius: .2em .7em .35em .6em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+/* Epistemic risks: the diagram as overlapping colour channels */
+body.dark .er-intro { grid-template-columns: 290px 1fr; gap: 40px; }
+body.dark .er-rings { isolation: isolate; }
+body.dark .er-rings circle { stroke: none; fill-opacity: .9; mix-blend-mode: screen; }
+body.dark .er-rings circle.c-persuasion { fill: var(--c-persuasion); }
+body.dark .er-rings circle.c-offloading { fill: var(--c-offloading); }
+body.dark .er-rings circle.c-feedback { fill: var(--c-feedback); }
+body.dark .er-rings text { font-size: 13px; font-weight: 700; fill: #fff; paint-order: stroke; stroke: rgba(0, 0, 0, .55); stroke-width: 3.5px; stroke-linejoin: round; }
+body.dark .er-lead { font-size: clamp(21px, 2.6vw, 26px); }
+body.dark .er-persuasion { --cat: var(--c-persuasion); }
+body.dark .er-offloading { --cat: var(--c-offloading); }
+body.dark .er-feedback { --cat: var(--c-feedback); }
+body.dark .er-glyph circle.on { fill: var(--cat); stroke: var(--cat); }
+body.dark .er-ex li::before { border-color: var(--cat); background: var(--cat); }
+body.dark .er-ex a { text-decoration-color: var(--cat); text-decoration-thickness: 2px; }
+body.dark .er-ex a:hover { color: var(--cat); }
+@media (max-width: 720px) { body.dark .er-intro { grid-template-columns: 1fr; gap: 24px; } body.dark .er-figure { max-width: 270px; } }
+
+/* Updates */
+body.dark .up-intro { color: var(--muted); margin-bottom: 22px; }
+body.dark .up-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+body.dark .up-filters[hidden] { display: none; }
+body.dark .up-filter { font: 500 13.5px var(--sans); color: #fff; background: none; border: 1px solid #3a3a3a; border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+body.dark .up-filter:hover { border-color: #fff; }
+body.dark .up-filter[aria-pressed="true"] { background: var(--c-marker); border-color: var(--c-marker); color: #000; }
+body.dark .up-list { list-style: none; margin: 0; padding: 0; }
+body.dark .up-item { padding: 20px 0; border-top: 1px solid var(--rule); }
+body.dark .up-item[hidden] { display: none; }
+body.dark .up-meta { display: flex; gap: 12px; align-items: center; font: 13px var(--sans); color: var(--muted); margin: 0 0 6px; }
+body.dark .up-tag { font-weight: 600; letter-spacing: .05em; text-transform: uppercase; font-size: 11.5px; color: #000; background: #fff; padding: 2px 7px; border-radius: 3px; }
+body.dark .up-item[data-type="interview"] .up-tag { background: var(--c-persuasion); }
+body.dark .up-item[data-type="news"] .up-tag { background: var(--c-offloading); }
+body.dark .up-item[data-type="publication"] .up-tag { background: var(--c-feedback); }
+body.dark .up-title { font-size: 20px; margin: 0 0 4px; }
+body.dark .up-title a { color: #fff; }
+body.dark .up-title a:hover { text-decoration: underline; text-decoration-color: var(--c-marker); }
+body.dark .up-summary { color: #d6d6d1; margin: 0; }
+body.dark .up-empty { font-family: var(--sans); font-size: 15px; color: #d6d6d1; border: 1px dashed #4a4a4a; border-radius: 10px; padding: 22px 24px; margin: 0; }
+body.dark .up-empty[hidden] { display: none; }
+
+/* People: one row per person, no rule above */
+body.dark .people { grid-template-columns: 1fr; gap: 28px; }
+body.dark .person { border-top: none; padding-top: 0; display: grid; grid-template-columns: 72px 1fr; column-gap: 22px; align-items: start; }
+body.dark .person .avatar { grid-row: span 3; margin: 0; }
+body.dark .person h3 { margin: 4px 0 2px; }
+body.dark .person .role { margin-bottom: 8px; }
+
+/* Contact box with a three-colour top edge */
+body.dark .contact { background: none; }
+body.dark .contact-box { position: relative; border: 1px solid #333; border-radius: 12px; padding: 36px 40px 40px; overflow: hidden; background: #0b0b0b; }
+body.dark .contact-box::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: linear-gradient(90deg, var(--c-persuasion) 0 33.3%, var(--c-offloading) 33.3% 66.6%, var(--c-feedback) 66.6% 100%); }
+body.dark .contact-box h2 { margin-bottom: 14px; }
+@media (max-width: 720px) { body.dark .contact-box { padding: 28px 22px 30px; } }
