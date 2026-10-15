@@ -45,7 +45,7 @@
 
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=16">
+  <link rel="stylesheet" href="style.css?v=17">
 </head>
 
 <body class="dark">
@@ -61,9 +61,10 @@
     <nav aria-label="Main">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#epistemic-risks">Epistemic risks</a></li>
+        <li><a href="#epistemic-risks"><span class="nav-long">Epistemic risks</span><span class="nav-short">Risks</span></a></li>
+        <li><a href="#updates">Updates</a></li>
         <li><a href="#people">People</a></li>
-        <li><a class="btn" href="#participate">Contact</a></li>
+        <li><a class="btn" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -78,7 +79,7 @@
   </div>
 </section>
 <div class="container tagline">
-  <p class="lede">A group of researchers and thinkers who believe the impacts of AI on the human mind should be a priority</p>
+  <p class="lede">A group of researchers and thinkers who believe the impacts of AI on the human mind <mark class="hl">should be a priority</mark></p>
 </div>
 
 <!-- ===== ABOUT ===== -->
@@ -87,8 +88,8 @@
     <h2>About</h2>
     <div>
       <p>The AI Epistemic Impacts Initiative (EII) seeks to understand and communicate the impact of AI on the human mind.</p>
-      <p>We think that for humanity to thrive in a future with advanced AI we need to protect our ability to reason and think for ourselves. This, we think, is a priority that AI developers and the AI safety community are paying insufficient attention to. The EII’s purpose is to change that.</p>
-      <p>Through research, meetings, and public dissemination of important findings on epistemic risks and virtues we aim to strengthen our collective cognitive security.</p>
+      <p>For humanity to thrive in a future with advanced AI, people need to <mark class="hl">protect their ability to reason and think for themselves</mark>. EII considers this a priority that AI developers and the AI safety community are paying insufficient attention to, and its purpose is to change that.</p>
+      <p>Through research, meetings, and public dissemination of important findings on epistemic risks and virtues, EII aims to strengthen collective cognitive security.</p>
     </div>
   </div>
 </section>
@@ -104,9 +105,9 @@
       <div class="er-intro">
         <div class="er-figure">
           <svg class="er-rings" viewBox="-8 0 236 224" role="img" aria-label="Three overlapping circles: Persuasion and Manipulation, Cognitive Offloading, and Feedback Loops">
-            <circle cx="110" cy="66" r="62"/>
-            <circle cx="57" cy="158" r="62"/>
-            <circle cx="163" cy="158" r="62"/>
+            <circle class="c-persuasion" cx="110" cy="66" r="62"/>
+            <circle class="c-offloading" cx="57" cy="158" r="62"/>
+            <circle class="c-feedback" cx="163" cy="158" r="62"/>
             <text x="110" y="66"><tspan x="110" dy="-0.6em">Persuasion and</tspan><tspan x="110" dy="1.2em">Manipulation</tspan></text>
             <text x="57" y="158"><tspan x="57" dy="-0.6em">Cognitive</tspan><tspan x="57" dy="1.2em">Offloading</tspan></text>
             <text x="163" y="158"><tspan x="163" dy="-0.6em">Feedback</tspan><tspan x="163" dy="1.2em">Loops</tspan></text>
@@ -116,7 +117,7 @@
       </div>
 
       <div class="er-cats">
-        <div class="er-cat" id="persuasion">
+        <div class="er-cat er-persuasion" id="persuasion">
           <h3><svg class="er-glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle class="on" cx="12" cy="8" r="6.2"/><circle cx="8.2" cy="14.6" r="6.2"/><circle cx="15.8" cy="14.6" r="6.2"/></svg>Persuasion and Manipulation</h3>
           <p>AI can change what people believe, whether or not anyone intends it to.</p>
           <ul class="er-ex">
@@ -125,7 +126,7 @@
             <li>Criminals have used <a href="https://www.ic3.gov/PSA/2025/PSA251219">AI-generated voice messages</a> to impersonate senior US officials.</li>
           </ul>
         </div>
-        <div class="er-cat" id="offloading">
+        <div class="er-cat er-offloading" id="offloading">
           <h3><svg class="er-glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle class="on" cx="8.2" cy="14.6" r="6.2"/><circle cx="12" cy="8" r="6.2"/><circle cx="15.8" cy="14.6" r="6.2"/></svg>Cognitive Offloading</h3>
           <p>People can hand AI the work of reasoning, and lose the skills they stop using.</p>
           <ul class="er-ex">
@@ -134,7 +135,7 @@
             <li>University students most often use AI for <a href="https://www.anthropic.com/news/anthropic-education-report-how-university-students-use-claude">creating and analysing</a>, the most demanding kinds of thinking.</li>
           </ul>
         </div>
-        <div class="er-cat" id="feedback">
+        <div class="er-cat er-feedback" id="feedback">
           <h3><svg class="er-glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle class="on" cx="15.8" cy="14.6" r="6.2"/><circle cx="12" cy="8" r="6.2"/><circle cx="8.2" cy="14.6" r="6.2"/></svg>Feedback Loops</h3>
           <p>People learn from AI and AI learns from people, which can narrow the range of ideas both draw on.</p>
           <ul class="er-ex">
@@ -146,6 +147,33 @@
       </div>
       <p class="er-source">Further reading: <a href="https://papers.ssrn.com/abstract=6873005"><cite>AI Epistemic Risks: Emerging Mechanisms &amp; Evidence</cite></a></p>
     </div>
+  </div>
+</section>
+
+<!-- ===== UPDATES =====
+     To add an entry: copy the example <li> below (remove the comment marks around it), put it at the top of the list
+     and fill in the link, title, date and type. data-type must be one of: interview, news, publication.
+     The filter buttons and the "coming soon" note switch themselves on and off. -->
+<section class="section" id="updates">
+  <div class="container">
+    <h2>Updates</h2>
+    <p class="up-intro">Interviews with the researchers EII works with, news, and publications by members.</p>
+    <div class="up-filters" role="group" aria-label="Show updates by type" hidden>
+      <button type="button" class="up-filter" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="up-filter" data-filter="interview" aria-pressed="false">Interviews</button>
+      <button type="button" class="up-filter" data-filter="news" aria-pressed="false">News</button>
+      <button type="button" class="up-filter" data-filter="publication" aria-pressed="false">Member publications</button>
+    </div>
+    <ul class="up-list" data-updates>
+      <!-- Example entry:
+      <li class="up-item" data-type="interview">
+        <p class="up-meta"><span class="up-tag">Interview</span><time datetime="2026-11-01">1 November 2026</time></p>
+        <h3 class="up-title"><a href="LINK">Title of the interview</a></h3>
+        <p class="up-summary">One sentence on what it covers.</p>
+      </li>
+      -->
+    </ul>
+    <p class="up-empty">The first interviews, news and member publications are coming soon.</p>
   </div>
 </section>
 
@@ -166,11 +194,11 @@
   </div>
 </section>
 
-<!-- ===== PARTICIPATE ===== -->
-<section class="section participate" id="participate">
-  <div class="container two-col">
-    <h2>Participate</h2>
-    <div>
+<!-- ===== CONTACT ===== -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact-box">
+    <h2>Contact</h2>
       <p>EII welcomes researchers who study how AI affects human thinking and would like to join the group or collaborate on a project.</p>
       <!-- Contact is via LinkedIn. Change the link below (it appears twice on this page). -->
       <a class="btn btn-large" href="https://www.linkedin.com/in/drjuliashaw/">Get in touch on LinkedIn</a>
@@ -188,6 +216,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
