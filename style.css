@@ -523,3 +523,7 @@ body.dark .er-glyph circle.on { fill: none; stroke: var(--cat); stroke-width: 1.
 /* Diagram removed: the sentence runs full width */
 body.dark .er-intro { grid-template-columns: 1fr; }
 body.dark .er-lead { text-align: left; }
+/* Contact: neuron photo behind the section, with the box in black like the banner's logo panel */
+body.dark .section.contact { background: #000 url(hero-neurons.webp) center / cover no-repeat; padding: 96px 0; border-top: none; }
+body.dark .contact-box { background: #000; border-color: #000; }
+@media (max-width: 720px) { body.dark .section.contact { padding: 56px 0; } }
