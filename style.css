@@ -346,15 +346,15 @@ a.pill { text-decoration: none; } a.pill:hover { background: #cfe8e3; }
 @media (max-width: 720px) { .logo-abbr { font-size: 22px; } }
 /* ===== Homepage dark theme (only applies to <body class="dark">) ===== */
 body.dark {
-  --bg: #1f1f1f; --ink: #fff; --muted: #b8b8b3; --rule: #3a3a3a;
-  --heading: #fff; --card: #2a2a2a; --accent: #fff; --accent-dark: #cfcfca;
+  --bg: #000; --ink: #fff; --muted: #b8b8b3; --rule: #2b2b2b;
+  --heading: #fff; --card: #111; --accent: #fff; --accent-dark: #cfcfca;
 }
-body.dark .site-header { background: rgba(31, 31, 31, 0.94); }
+body.dark .site-header { background: rgba(0, 0, 0, 0.92); }
 body.dark .hero:not(.paper-hero) { background: var(--bg); }
 body.dark .btn-large { background: #fff; color: #000; }
 body.dark .btn-large:hover { background: #cfcfca; color: #000; }
-body.dark .pill { color: #fff; background: #2c2c2c; box-shadow: 0 0 0 1px #4a4a4a; }
-body.dark .avatar { background: #2a2a2a; }
+body.dark .pill { color: #fff; background: #1c1c1c; box-shadow: 0 0 0 1px #3a3a3a; }
+body.dark .avatar { background: #111; }
 body.dark .mfv {
   --mfv-bg: #000; --mfv-ink: #fff; --mfv-muted: #b8b8b3; --mfv-rule: #2b2b2b; --mfv-card: #111;
   --mfv-teal-soft: #123f39; --mfv-teal-mid: #3f9c8e;
