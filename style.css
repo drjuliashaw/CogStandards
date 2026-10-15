@@ -527,3 +527,7 @@ body.dark .er-lead { text-align: left; }
 body.dark .section.contact { background: #000 url(hero-neurons.webp) center / cover no-repeat; padding: 96px 0; border-top: none; }
 body.dark .contact-box { background: #000; border-color: #000; }
 @media (max-width: 720px) { body.dark .section.contact { padding: 56px 0; } }
+/* Contact box: narrow, centred, plain black like the banner panel (no colour stripe) */
+body.dark .contact-box { max-width: 440px; margin: 0 auto; border: none; border-radius: 0; padding: 34px 36px 38px; }
+body.dark .contact-box::before { display: none; }
+@media (max-width: 720px) { body.dark .contact-box { padding: 28px 24px 30px; } }
