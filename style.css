@@ -393,7 +393,7 @@ body.dark .tagline { text-align: center; padding-top: 44px; padding-bottom: 20px
 body.dark .tagline .lede { margin: 0; font-style: italic; }
 @media (max-width: 720px) { body.dark .hero.hero-banner { padding: 40px 16px; } }
 /* ===== What are epistemic risks? (three-circle diagram + notes) ===== */
-body.dark .er-def { font-family: var(--serif); font-size: clamp(22px, 2.7vw, 29px); line-height: 1.35; color: #fff; margin: 0 0 22px; }
+body.dark .er-def { font-family: var(--serif); color: #fff; margin: 0 0 22px; }
 body.dark #epistemic-risks cite { font-style: italic; }
 body.dark .er { display: grid; grid-template-columns: 230px 1fr; gap: 44px; align-items: start; margin-top: 36px; padding-top: 32px; border-top: 1px solid var(--rule); }
 body.dark .er-rings { display: block; width: 100%; height: auto; overflow: visible; }
