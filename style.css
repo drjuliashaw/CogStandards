@@ -511,3 +511,12 @@ body.dark .contact-box h2 { margin-bottom: 14px; }
 @media (max-width: 720px) { body.dark .contact-box { padding: 28px 22px 30px; } }
 body.dark .er-text a { color: #fff; text-decoration: underline; text-decoration-color: var(--cat); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 body.dark .er-text a:hover { color: var(--cat); }
+/* Diagram: outlines only, each circle drawn in its category colour */
+body.dark .er-rings circle, body.dark .er-rings circle.c-persuasion, body.dark .er-rings circle.c-offloading, body.dark .er-rings circle.c-feedback { fill: none; mix-blend-mode: normal; stroke-width: 1.5; }
+body.dark .er-rings circle.c-persuasion { stroke: var(--c-persuasion); }
+body.dark .er-rings circle.c-offloading { stroke: var(--c-offloading); }
+body.dark .er-rings circle.c-feedback { stroke: var(--c-feedback); }
+body.dark .er-rings text { font-size: 12.5px; font-weight: 500; fill: #e4e4df; stroke: none; }
+body.dark .er-intro { grid-template-columns: 1fr 290px; }
+@media (max-width: 720px) { body.dark .er-intro { grid-template-columns: 1fr; } }
+body.dark .er-glyph circle.on { fill: none; stroke: var(--cat); stroke-width: 1.6; }
