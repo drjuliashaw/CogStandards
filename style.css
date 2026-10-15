@@ -407,6 +407,12 @@ body.dark .er-glyph { flex: none; width: 26px; height: 26px; }
 body.dark .er-glyph circle { fill: none; stroke: #8a8a86; stroke-width: 1.1; }
 body.dark .er-glyph circle.on { fill: #fff; stroke: #fff; }
 body.dark .er-cat p { color: #e4e4df; }
+body.dark .er-cat > p { margin-bottom: 12px; }
+body.dark .er-ex { list-style: none; margin: 0 0 22px; padding: 0; }
+body.dark .er-ex li { position: relative; padding-left: 22px; margin: 0 0 8px; color: #e4e4df; }
+body.dark .er-ex li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 7px; height: 7px; border: 1.2px solid #9a9a96; border-radius: 50%; }
+body.dark .er-ex a { color: #fff; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, .4); text-underline-offset: 3px; }
+body.dark .er-ex a:hover { text-decoration-color: #fff; }
 body.dark .er-source { font-family: var(--sans); font-size: 13.5px; color: var(--muted); margin: 28px 0 0; padding-top: 16px; border-top: 1px solid var(--rule); }
 body.dark .er-source a { color: #fff; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, .4); text-underline-offset: 3px; }
 @media (max-width: 720px) {
