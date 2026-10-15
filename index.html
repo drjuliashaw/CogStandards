@@ -45,8 +45,7 @@
 
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="style.css?v=13">
-  <link rel="stylesheet" href="mental-functions.css?v=2">
+  <link rel="stylesheet" href="style.css?v=14">
 </head>
 
 <body class="dark">
@@ -63,7 +62,6 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#epistemic-risks">Epistemic risks</a></li>
-        <li><a href="#mental-functions">Cognitive capacities</a></li>
         <li><a href="#people">People</a></li>
         <li><a class="btn" href="#participate">Contact</a></li>
       </ul>
@@ -95,61 +93,47 @@
   </div>
 </section>
 
-<!-- ===== EPISTEMIC RISKS =====
-     The interactive part needs risks.js (linked at the bottom of this page). Without it, all three notes simply show as a list. -->
+<!-- ===== EPISTEMIC RISKS ===== -->
 <section class="section" id="epistemic-risks">
   <div class="container two-col">
     <h2>What are epistemic risks?</h2>
     <div>
       <p class="er-def">Epistemic risks are threats to humanity’s shared ability to form accurate beliefs, reason well and keep a healthy information environment.</p>
-      <div class="er" data-er>
+      <p>EII uses the mental functions defined in the WHO <a href="https://www.who.int/standards/classifications/international-classification-of-functioning-disability-and-health">International Classification of Functioning, Disability and Health (ICF)</a> as a map of which aspects of human cognition AI could harm or support.</p>
+
+      <div class="er-intro">
         <div class="er-figure">
-          <svg class="er-rings" viewBox="-8 0 236 224" role="group" aria-label="The three categories of epistemic risk">
-            <g class="er-ring" data-er-ring="persuasion" role="button" tabindex="0" aria-label="Persuasion and manipulation">
-              <circle cx="110" cy="66" r="62"/><text x="110" y="66"><tspan x="110" dy="-0.6em">Persuasion and</tspan><tspan x="110" dy="1.2em">Manipulation</tspan></text>
-            </g>
-            <g class="er-ring" data-er-ring="offloading" role="button" tabindex="0" aria-label="Cognitive offloading">
-              <circle cx="57" cy="158" r="62"/><text x="57" y="158"><tspan x="57" dy="-0.6em">Cognitive</tspan><tspan x="57" dy="1.2em">Offloading</tspan></text>
-            </g>
-            <g class="er-ring" data-er-ring="feedback" role="button" tabindex="0" aria-label="Feedback loops">
-              <circle cx="163" cy="158" r="62"/><text x="163" y="158"><tspan x="163" dy="-0.6em">Feedback</tspan><tspan x="163" dy="1.2em">Loops</tspan></text>
-            </g>
+          <svg class="er-rings" viewBox="-8 0 236 224" role="img" aria-label="Three overlapping circles: Persuasion and Manipulation, Cognitive Offloading, and Feedback Loops">
+            <circle cx="110" cy="66" r="62"/>
+            <circle cx="57" cy="158" r="62"/>
+            <circle cx="163" cy="158" r="62"/>
+            <text x="110" y="66"><tspan x="110" dy="-0.6em">Persuasion and</tspan><tspan x="110" dy="1.2em">Manipulation</tspan></text>
+            <text x="57" y="158"><tspan x="57" dy="-0.6em">Cognitive</tspan><tspan x="57" dy="1.2em">Offloading</tspan></text>
+            <text x="163" y="158"><tspan x="163" dy="-0.6em">Feedback</tspan><tspan x="163" dy="1.2em">Loops</tspan></text>
           </svg>
         </div>
-        <div class="er-body">
-          <p class="er-lead">There are three broad categories of epistemic risks, and they can compound one another.</p>
-          <dl class="er-notes" aria-live="polite">
-            <div class="er-note" data-er-note="persuasion">
-              <dt>Persuasion and manipulation</dt>
-              <dd>AI can be used on purpose to manipulate people for political or commercial ends, or to push them towards crime or radicalisation. It can also mislead when nobody intends it to, for example when a sycophantic model tells users what they want to hear.</dd>
-            </div>
-            <div class="er-note" data-er-note="offloading">
-              <dt>Cognitive offloading</dt>
-              <dd>People can now hand whole tasks of thinking over to AI. The authors argue this differs in kind from earlier technologies, and that skills people stop practising may decline.</dd>
-            </div>
-            <div class="er-note" data-er-note="feedback">
-              <dt>Feedback loops</dt>
-              <dd>People learn from AI, and AI learns from what people and other AI systems produce. These loops can narrow the range of ideas both sides draw on. The authors report signs that this is already making views more alike, and warn that it could also split people into separate camps.</dd>
-            </div>
-          </dl>
+        <p class="er-lead">There are three broad categories of epistemic risks, and they can compound one another.</p>
+      </div>
+
+      <div class="er-cats">
+        <div class="er-cat" id="persuasion">
+          <h3><svg class="er-glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle class="on" cx="12" cy="8" r="6.2"/><circle cx="8.2" cy="14.6" r="6.2"/><circle cx="15.8" cy="14.6" r="6.2"/></svg>Persuasion and Manipulation</h3>
+          <p>AI systems already match, and in some studies exceed, human persuasiveness, for example by winning debates against human opponents. They become more persuasive as models grow more capable. State and non-state actors already use AI for political influence, economic manipulation and recruitment to terrorist organisations, and deepfakes have been used to impersonate government officials.</p>
+          <p>Harm can also happen when nobody intends it. Sycophantic models reinforce what users already believe, make their attitudes more extreme and reduce their willingness to look for evidence that they are wrong. Exposure is large. Well over a billion people use chatbots, and in the week before the 2024 UK general election, 32% of chatbot users discussed topics relevant to their vote with one.</p>
+        </div>
+        <div class="er-cat" id="offloading">
+          <h3><svg class="er-glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle class="on" cx="8.2" cy="14.6" r="6.2"/><circle cx="12" cy="8" r="6.2"/><circle cx="15.8" cy="14.6" r="6.2"/></svg>Cognitive Offloading</h3>
+          <p>Search engines changed how people recall information. AI goes further, because people can hand it the work of forming beliefs, building explanations and reasoning itself. Among university students, the most common uses of AI are creating (39.8%) and analysing (30.2%). Software engineers showed reduced debugging ability after coding with AI, and an EEG study found lower brain connectivity in people writing with AI than in people using a search engine or no tools.</p>
+          <p>The effect can feed itself. As people lose trust in their own reasoning they hand more of it over, a pattern described as “cognitive surrender”. It is not spread evenly: marginalised students are more likely to let AI do the work entirely, while students with more education use it to extend their own thinking. People whose critical thinking has been dulled in this way are also more open to manipulation.</p>
+        </div>
+        <div class="er-cat" id="feedback">
+          <h3><svg class="er-glyph" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle class="on" cx="15.8" cy="14.6" r="6.2"/><circle cx="12" cy="8" r="6.2"/><circle cx="8.2" cy="14.6" r="6.2"/></svg>Feedback Loops</h3>
+          <p>People learn from AI, and AI learns from what people produce, including content written with AI. These loops are narrowing the range of ideas both draw on. AI tools increase individual scientists’ output and citations but narrow the set of topics that science pursues as a whole. AI-assisted brainstorming produces fewer unique ideas than human-only groups, and a study of 280,000 academic talks found ChatGPT’s typical phrasing spreading into human speech.</p>
+          <p>The same loops can also split people into separate camps, for example when a model is tuned to suit one political audience. The endpoint the paper warns of is “lock-in”, where society becomes stuck in self-referential cycles that resist correction and can no longer move towards new knowledge.</p>
         </div>
       </div>
       <p class="er-source">Source: <a href="https://papers.ssrn.com/abstract=6873005"><cite>AI Epistemic Risks: Emerging Mechanisms &amp; Evidence</cite></a></p>
     </div>
-  </div>
-</section>
-
-<!-- ===== MENTAL FUNCTIONS =====
-     The interactive diagram needs mental-functions.css and mental-functions.js (linked in the head and at the bottom of this page). -->
-<section class="section" id="mental-functions">
-  <div class="container">
-    <div class="two-col">
-      <h2>Cognitive capacities worth protecting</h2>
-      <div>
-        <p>EII uses the mental functions defined in the WHO International Classification of Functioning, Disability and Health (ICF) as a map of which aspects of human cognition AI could harm or support.</p>
-      </div>
-    </div>
-    <div class="home-viz" data-mental-functions></div>
   </div>
 </section>
 
@@ -204,7 +188,5 @@
 </footer>
 
 <script src="script.js"></script>
-<script src="mental-functions.js?v=2"></script>
-<script src="risks.js?v=2"></script>
 </body>
 </html>
