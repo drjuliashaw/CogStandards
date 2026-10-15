@@ -509,3 +509,5 @@ body.dark .contact-box { position: relative; border: 1px solid #333; border-radi
 body.dark .contact-box::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: linear-gradient(90deg, var(--c-persuasion) 0 33.3%, var(--c-offloading) 33.3% 66.6%, var(--c-feedback) 66.6% 100%); }
 body.dark .contact-box h2 { margin-bottom: 14px; }
 @media (max-width: 720px) { body.dark .contact-box { padding: 28px 22px 30px; } }
+body.dark .er-text a { color: #fff; text-decoration: underline; text-decoration-color: var(--cat); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+body.dark .er-text a:hover { color: var(--cat); }
