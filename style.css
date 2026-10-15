@@ -422,7 +422,7 @@ body.dark .er-source a { color: #fff; text-decoration: underline; text-decoratio
 }
 /* ===== Refresh (Oct 2026): narrower text, colour from the banner photo, highlighter marks, boxes ===== */
 /* Colours sampled from the neuron photo's fluorescence channels. Each epistemic risk category has one. */
-body.dark { --c-persuasion: #ff4fb4; --c-offloading: #5be37a; --c-feedback: #6a95ff; --c-marker: #d4f55c; }
+body.dark { --c-persuasion: #ff4fb4; --c-offloading: #5be37a; --c-feedback: #6a95ff; --c-marker: #fff; }
 
 /* Narrower reading column (about 70 characters per line); the header stays wide. */
 body.dark .container { max-width: 760px; }
@@ -451,7 +451,7 @@ body.dark .hero-banner .lk-name { font-size: clamp(16px, 2.5vw, 29px); }
 /* Highlighter marks */
 body.dark mark.hl {
   color: #000; font-style: inherit;
-  background: linear-gradient(100deg, rgba(212, 245, 92, 0) 0.4%, var(--c-marker) 2.2%, var(--c-marker) 97.5%, rgba(212, 245, 92, 0) 99.6%);
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0) 0.4%, var(--c-marker) 2.2%, var(--c-marker) 97.5%, rgba(255, 255, 255, 0) 99.6%);
   padding: .02em .28em .06em; margin: 0 -.08em; border-radius: .2em .7em .35em .6em;
   -webkit-box-decoration-break: clone; box-decoration-break: clone;
 }
